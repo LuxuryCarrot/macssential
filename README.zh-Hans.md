@@ -1,11 +1,26 @@
 [English](README.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [简体中文](README.zh-Hans.md)
 
-# macssential
+<p align="center">
+  <img src="docs/assets/logo.png" width="96" alt="macssential logo">
+</p>
+
+<h1 align="center">macssential</h1>
+
+<p align="center"><em>在菜单栏中掌控 macOS 的默认行为。</em></p>
+
+<p align="center">
+  <a href="https://github.com/LuxuryCarrot/macssential/releases"><img src="https://img.shields.io/github/v/release/LuxuryCarrot/macssential?style=flat-square" alt="GitHub release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
+  <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+</p>
 
 macssential 是一款面向 macOS 14+ 的菜单栏实用工具，让你只需一次点击就能掌控
 macOS 那些不方便的默认行为——程序坞在多显示器间的移动、按键重复速度、滚动方向、
 文件名规范化等等。每个功能都是独立模块，无需在系统设置里翻找，直接在菜单栏中
 即可开关。
+
+<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
 
 > macssential 基于 [MIT 许可证](LICENSE)开源。
 
@@ -74,3 +89,7 @@ App 内提示新版本——无需手动下载。
 ## 系统要求
 
 - macOS 14 Sonoma 或更高版本
+
+---
+
+<sub>macssential 是一个独立的开源项目，与 Apple Inc. 无任何隶属、认可或赞助关系。Mac 和 macOS 是 Apple Inc. 的商标。</sub>

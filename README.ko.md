@@ -1,11 +1,26 @@
 [English](README.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [简体中文](README.zh-Hans.md)
 
-# macssential
+<p align="center">
+  <img src="docs/assets/logo.png" width="96" alt="macssential logo">
+</p>
+
+<h1 align="center">macssential</h1>
+
+<p align="center"><em>불편한 macOS 기본 동작, 메뉴바에서 바로 제어하세요.</em></p>
+
+<p align="center">
+  <a href="https://github.com/LuxuryCarrot/macssential/releases"><img src="https://img.shields.io/github/v/release/LuxuryCarrot/macssential?style=flat-square" alt="GitHub release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
+  <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+</p>
 
 macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본 동작을 클릭 한
 번으로 직접 제어할 수 있게 해줍니다 — 모니터 간 Dock 이동, 키보드 반복 속도,
 스크롤 방향, 파일명 정규화 등. 각 기능은 독립적인 모듈이라 시스템 설정을 뒤질
 필요 없이 메뉴바에서 바로 켜고 끌 수 있습니다.
+
+<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
 
 > macssential은 [MIT 라이선스](LICENSE)로 공개된 오픈소스입니다.
 
@@ -81,3 +96,7 @@ Dock 고정, 스크롤 방향, 스크린샷 자동 복사 모듈은 손쉬운 �
 ## 요구 사항
 
 - macOS 14 Sonoma 이상
+
+---
+
+<sub>macssential은 독립적인 오픈소스 프로젝트로, Apple Inc.와 제휴하거나 Apple Inc.의 보증 또는 후원을 받지 않습니다. Mac 및 macOS는 Apple Inc.의 상표입니다.</sub>

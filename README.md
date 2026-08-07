@@ -1,12 +1,27 @@
 [English](README.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [简体中文](README.zh-Hans.md)
 
-# macssential
+<p align="center">
+  <img src="docs/assets/logo.png" width="96" alt="macssential logo">
+</p>
+
+<h1 align="center">macssential</h1>
+
+<p align="center"><em>Take control of macOS defaults — right from your menu bar.</em></p>
+
+<p align="center">
+  <a href="https://github.com/LuxuryCarrot/macssential/releases"><img src="https://img.shields.io/github/v/release/LuxuryCarrot/macssential?style=flat-square" alt="GitHub release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
+  <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+</p>
 
 macssential is a menu bar utility for macOS 14+ that lets you take control of
 inconvenient macOS defaults with a single click — dock behavior across
 monitors, keyboard repeat speed, scroll direction, filename normalization, and
 more. Each feature is an independent module you can switch on or off right
 from the menu bar, with no digging through System Settings.
+
+<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
 
 > macssential is open source under the [MIT License](LICENSE).
 
@@ -82,3 +97,7 @@ work without any special permissions.
 ## Requirements
 
 - macOS 14 Sonoma or later
+
+---
+
+<sub>macssential is an independent open-source project and is not affiliated with, endorsed by, or sponsored by Apple Inc. Mac and macOS are trademarks of Apple Inc.</sub>
