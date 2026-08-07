@@ -122,6 +122,39 @@ else
         "$DMG_PATH"
 fi
 
+# --- Step 1b: Verify uploaded asset integrity (download back, compare sha256) ---
+# A truncated/corrupted upload breaks Sparkle's EdDSA validation on user
+# machines ("update is improperly signed"), so fail loud here instead.
+LOCAL_SHA=$(shasum -a 256 "$DMG_PATH" | awk '{print $1}')
+ASSET_URL="https://github.com/$RELEASES_REPO/releases/download/$TAG/$EXPECTED_NAME"
+verify_uploaded_asset() {
+    local tmp_dl i
+    tmp_dl=$(mktemp)
+    # CDN propagation after (re)upload can lag; poll up to ~60s.
+    for i in 1 2 3 4 5 6; do
+        if curl -fsSL "$ASSET_URL" -o "$tmp_dl" \
+            && [ "$(shasum -a 256 "$tmp_dl" | awk '{print $1}')" = "$LOCAL_SHA" ]; then
+            rm -f "$tmp_dl"
+            return 0
+        fi
+        sleep 10
+    done
+    rm -f "$tmp_dl"
+    return 1
+}
+
+echo "==> Verifying uploaded asset integrity..."
+if ! verify_uploaded_asset; then
+    echo "    Uploaded asset does not match local DMG -- re-uploading once..."
+    gh release upload "$TAG" "$DMG_PATH" --repo "$RELEASES_REPO" --clobber
+    if ! verify_uploaded_asset; then
+        echo "Error: uploaded asset STILL does not match local DMG after re-upload." >&2
+        echo "Do not publish this release -- users would hit Sparkle signature errors." >&2
+        exit 1
+    fi
+fi
+echo "    Asset integrity verified (sha256 $LOCAL_SHA)"
+
 # --- Step 2: Publish appcast.xml as docs/appcast.xml (Pages serves main /docs) ---
 echo "==> Publishing docs/appcast.xml to $RELEASES_REPO..."
 gh_put_file "$RELEASES_REPO" "docs/appcast.xml" "$APPCAST" "Update appcast for macssential $VERSION"
