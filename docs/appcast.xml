@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>macssential</title>
+    <link>https://github.com/LuxuryCarrot/macssential</link>
+    <description>macssential update feed</description>
+    <language>en</language>
+    <!-- Release entries will be added here by CI/CD pipeline -->
+    <!-- Each <item> contains version info, download URL, and EdDSA signature -->
+    <!--
+    <item>
+      <title>Version X.Y.Z</title>
+      <pubDate>DATE_HERE</pubDate>
+      <sparkle:version>BUILD_NUMBER</sparkle:version>
+      <sparkle:shortVersionString>X.Y.Z</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://github.com/LuxuryCarrot/macssential/releases/download/vX.Y.Z/macssential-X.Y.Z.dmg"
+        sparkle:edSignature="SIGNATURE_HERE"
+        length="FILE_SIZE"
+        type="application/octet-stream" />
+    </item>
+    -->
+    <item>
+      <title>Version 0.1.6</title>
+      <pubDate>Fri, 07 Aug 2026 08:51:11 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://github.com/LuxuryCarrot/macssential/releases/download/v0.1.6/macssential-0.1.6.dmg"
+        sparkle:edSignature="zjfPiv5bAvAOZh1AFY2+PH44f6fR8TBiSiNAwr1BT6XQyq8tFifYqLoQ+V6UxxpwUbN2GFjQ6yeFJAPzlyuuBA=="
+        length="1416460"
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>

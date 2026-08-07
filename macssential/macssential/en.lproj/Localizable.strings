@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Dock Anchor";
+"module.dock_anchor.description" = "Lock Dock to a specific monitor";
+"module.hidden_files.name" = "Hidden Files";
+"module.hidden_files.description" = "Show hidden files in Finder";
+"module.scroll_direction.name" = "Scroll Direction";
+"module.scroll_direction.description" = "Separate mouse and trackpad scrolling";
+"module.mouse_acceleration.name" = "Mouse Acceleration";
+"module.mouse_acceleration.description" = "Disable or adjust mouse acceleration";
+"module.dock_autohide.name" = "Dock Auto-Hide";
+"module.dock_autohide.description" = "Automatically hide and show the Dock";
+"module.dock_recent_apps.name" = "Hide Recent Apps";
+"module.dock_recent_apps.description" = "Remove recently used apps from Dock";
+"module.green_button.name" = "Titlebar Maximize";
+"module.green_button.description" = "Double-click title bar to maximize instead of entering fullscreen";
+"module.close_quit.name" = "Close to Quit";
+"module.close_quit.description" = "Quit apps when their last window is closed";
+"module.screenshot_auto_copy.name" = "Screenshot Auto-Copy";
+"module.screenshot_auto_copy.description" = "Copy screenshots to clipboard instead of saving files";
+"module.screenshot_auto_copy.also_save_to_folder" = "Also save to folder";
+"module.screenshot_auto_copy.choose_folder" = "Choose...";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Filename Normalizer";
+"module.kfn.description" = "Auto-rename decomposed (NFD) filenames to NFC";
+"module.kfn.add_folder" = "Add Folder...";
+"module.kfn.watched_folders" = "Watched Folders";
+"module.kfn.no_folders" = "No folders configured. Add a folder to watch.";
+"module.kfn.remove_folder" = "Remove folder";
+
+/* Settings */
+"settings.launch_at_login" = "Launch at Login";
+"settings.show_hidden_files" = "Show Hidden Files";
+"settings.check_for_updates" = "Check for Updates...";
+"settings.screenshot.title" = "Screenshot";
+"settings.screenshot.format" = "Format";
+"settings.screenshot.save_location" = "Save Location";
+"settings.screenshot.browse" = "Choose Folder...";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Version %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Language";
+"panel.settings" = "Settings";
+"panel.quit" = "Quit";
+
+/* Status */
+"status.coming_soon" = "Coming Soon";
+"status.accessibility_required" = "Accessibility Required";
+"status.open_settings" = "Open Settings";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Disable Acceleration";
+"label.acceleration_curve" = "Acceleration Curve";
+"label.low" = "Low";
+"label.high" = "High";
+"hint.mouse_acceleration" = "Disable for 1:1 mouse movement. Default is 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Temporary unlock";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Modules";
+"settings.panel_layout.title" = "Panel Layout";
+"settings.panel_layout.description" = "Choose which modules appear in the menu bar panel.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "General";
+"settings.tab.modules" = "Modules";
+"settings.tab.panel" = "Panel";
+"settings.tab.about" = "About";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Key Repeat";
+"module.key_repeat.description" = "Faster keyboard repeat than System Settings allows";
+"module.key_repeat.initial_delay" = "Delay until repeat";
+"module.key_repeat.repeat_rate" = "Repeat rate";
+"module.key_repeat.short" = "Short";
+"module.key_repeat.long" = "Long";
+"module.key_repeat.fast" = "Fast";
+"module.key_repeat.slow" = "Slow";
+"module.key_repeat.hint" = "Speed changes apply immediately; the accent popup is disabled for apps launched afterward.";
+"module.key_repeat.restore_defaults" = "Restore macOS Defaults";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Finder Sort";
+"module.finder_sort.description" = "Default sort order for new Finder folders";
+"module.finder_sort.sort_by" = "Sort by";
+"module.finder_sort.hint" = "Applies to new or unvisited folders; Finder restarts to take effect. Folders with saved view settings keep their own sort.";
+"module.finder_sort.enforce" = "Keep sort enforced";
+"module.finder_sort.enforce_hint" = "Periodically re-applies the sort to all open Finder windows, including folders with saved view settings. macOS will ask once for permission to control Finder.";
+"module.finder_sort.option.name" = "Name";
+"module.finder_sort.option.kind" = "Kind";
+"module.finder_sort.option.date_modified" = "Date Modified";
+"module.finder_sort.option.date_created" = "Date Created";
+"module.finder_sort.option.date_added" = "Date Added";
+"module.finder_sort.option.size" = "Size";
+"module.finder_sort.option.label" = "Tags";
+"module.finder_sort.option.grid" = "Snap to Grid";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Open Source Licenses";
+"settings.about.permissions.title" = "Required Permissions";
+"settings.about.permissions.used_by" = "Used by:";
+"settings.about.permissions.accessibility.name" = "Accessibility";
+"settings.about.permissions.accessibility.desc" = "Needed to monitor mouse and keyboard events system-wide. Grant it in System Settings > Privacy & Security > Accessibility.";
+"settings.about.permissions.files.name" = "Files & Folders";
+"settings.about.permissions.files.desc" = "Needed to watch and rename files in folders you choose. macOS asks for this automatically the first time a folder is accessed.";
+"settings.about.permissions.none_note" = "All other modules work without any special permissions.";

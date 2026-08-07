@@ -1,0 +1,111 @@
+/* Module Names */
+"module.dock_anchor.name" = "Dock 고정";
+"module.dock_anchor.description" = "Dock를 특정 모니터에 고정";
+"module.hidden_files.name" = "숨김 파일";
+"module.hidden_files.description" = "Finder에서 숨김 파일 표시";
+"module.scroll_direction.name" = "스크롤 방향";
+"module.scroll_direction.description" = "마우스와 트랙패드 스크롤 분리";
+"module.mouse_acceleration.name" = "마우스 가속";
+"module.mouse_acceleration.description" = "마우스 가속 비활성화 또는 조절";
+"module.dock_autohide.name" = "Dock 자동 숨기기";
+"module.dock_autohide.description" = "Dock을 자동으로 숨기고 표시";
+"module.dock_recent_apps.name" = "최근 앱 숨기기";
+"module.dock_recent_apps.description" = "Dock에서 최근 사용한 앱 제거";
+"module.green_button.name" = "타이틀바 최대화";
+"module.green_button.description" = "타이틀바 더블클릭으로 전체화면 대신 최대화";
+"module.close_quit.name" = "닫으면 종료";
+"module.close_quit.description" = "마지막 창을 닫으면 앱 종료";
+"module.screenshot_auto_copy.name" = "스크린샷 자동 복사";
+"module.screenshot_auto_copy.description" = "스크린샷을 파일로 저장하는 대신 클립보드에 직접 복사";
+"module.screenshot_auto_copy.also_save_to_folder" = "폴더에도 저장";
+"module.screenshot_auto_copy.choose_folder" = "선택...";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "한글 파일명 정규화";
+"module.kfn.description" = "NFD 한글 파일명을 NFC로 자동 변환";
+"module.kfn.add_folder" = "폴더 추가...";
+"module.kfn.watched_folders" = "감시 폴더";
+"module.kfn.no_folders" = "설정된 폴더가 없습니다. 폴더를 추가하세요.";
+"module.kfn.remove_folder" = "폴더 제거";
+
+/* Settings */
+"settings.launch_at_login" = "로그인 시 실행";
+"settings.show_hidden_files" = "숨김 파일 표시";
+"settings.check_for_updates" = "업데이트 확인...";
+"settings.screenshot.title" = "스크린샷";
+"settings.screenshot.format" = "포맷";
+"settings.screenshot.save_location" = "저장 위치";
+"settings.screenshot.browse" = "폴더 선택...";
+"settings.about.title" = "macssential";
+"settings.about.version" = "버전 %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "언어";
+"panel.settings" = "설정";
+"panel.quit" = "종료";
+
+/* Status */
+"status.coming_soon" = "곷 출시";
+"status.accessibility_required" = "접근성 권한 필요";
+"status.open_settings" = "설정 열기";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "가속 비활성화";
+"label.acceleration_curve" = "가속 곡선";
+"label.low" = "낮음";
+"label.high" = "높음";
+"hint.mouse_acceleration" = "1:1 마우스 움직임을 위해 비활성화. 기본값은 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "임시 잠금 해제";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "모듈";
+"settings.panel_layout.title" = "패널 구성";
+"settings.panel_layout.description" = "메뉴 막대 패널에 표시할 모듈을 선택하세요.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "일반";
+"settings.tab.modules" = "모듈";
+"settings.tab.panel" = "패널";
+"settings.tab.about" = "정보";
+
+/* Key Repeat */
+"module.key_repeat.name" = "키 반복 속도";
+"module.key_repeat.description" = "시스템 설정보다 빠른 키 반복 속도";
+"module.key_repeat.initial_delay" = "반복 시작 지연";
+"module.key_repeat.repeat_rate" = "반복 속도";
+"module.key_repeat.short" = "짧게";
+"module.key_repeat.long" = "길게";
+"module.key_repeat.fast" = "빠르게";
+"module.key_repeat.slow" = "느리게";
+"module.key_repeat.hint" = "속도 변경은 즉시 적용되며, 악센트 팝업 비활성화는 이후 실행하는 앱부터 적용됩니다.";
+"module.key_repeat.restore_defaults" = "macOS 기본값 복원";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Finder 정렬";
+"module.finder_sort.description" = "새 Finder 폴더의 기본 정렬 순서";
+"module.finder_sort.sort_by" = "정렬 기준";
+"module.finder_sort.hint" = "새로 만들거나 방문한 적 없는 폴더에 적용되며, 적용 시 Finder가 재시동됩니다. 보기 설정이 저장된 폴더는 기존 정렬을 유지합니다.";
+"module.finder_sort.enforce" = "정렬 강제 유지";
+"module.finder_sort.enforce_hint" = "열려 있는 모든 Finder 창에 정렬을 주기적으로 다시 적용합니다. 보기 설정이 저장된 폴더에도 적용됩니다. 최초 사용 시 macOS가 Finder 제어 권한을 한 번 요청합니다.";
+"module.finder_sort.option.name" = "이름";
+"module.finder_sort.option.kind" = "종류";
+"module.finder_sort.option.date_modified" = "수정일";
+"module.finder_sort.option.date_created" = "생성일";
+"module.finder_sort.option.date_added" = "추가된 날짜";
+"module.finder_sort.option.size" = "크기";
+"module.finder_sort.option.label" = "태그";
+"module.finder_sort.option.grid" = "격자에 맞춤";
+
+/* Settings — About */
+"settings.about.licenses.title" = "오픈소스 라이선스";
+"settings.about.permissions.title" = "필요 권한";
+"settings.about.permissions.used_by" = "사용 기능:";
+"settings.about.permissions.accessibility.name" = "손쉬운 사용";
+"settings.about.permissions.accessibility.desc" = "시스템 전역의 마우스·키보드 이벤트를 감지하기 위해 필요합니다. 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 허용해 주세요.";
+"settings.about.permissions.files.name" = "파일 및 폴더";
+"settings.about.permissions.files.desc" = "선택한 폴더의 파일을 감시하고 이름을 변경하기 위해 필요합니다. 폴더에 처음 접근할 때 macOS가 자동으로 권한을 요청합니다.";
+"settings.about.permissions.none_note" = "다른 모든 모듈은 별도의 권한 없이 작동합니다.";
+

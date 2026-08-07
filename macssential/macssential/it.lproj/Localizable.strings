@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Ancoraggio Dock";
+"module.dock_anchor.description" = "Blocca il Dock su un monitor specifico";
+"module.hidden_files.name" = "File nascosti";
+"module.hidden_files.description" = "Mostra i file nascosti nel Finder";
+"module.scroll_direction.name" = "Direzione di scorrimento";
+"module.scroll_direction.description" = "Separa lo scorrimento di mouse e trackpad";
+"module.mouse_acceleration.name" = "Accelerazione del mouse";
+"module.mouse_acceleration.description" = "Disattiva o regola l'accelerazione del mouse";
+"module.dock_autohide.name" = "Nascondi Dock automaticamente";
+"module.dock_autohide.description" = "Nascondi e mostra il Dock automaticamente";
+"module.dock_recent_apps.name" = "Nascondi app recenti";
+"module.dock_recent_apps.description" = "Rimuovi le app recenti dal Dock";
+"module.green_button.name" = "Ingrandisci dalla barra del titolo";
+"module.green_button.description" = "Doppio clic sulla barra del titolo ingrandisce invece dello schermo intero";
+"module.close_quit.name" = "Chiudi per uscire";
+"module.close_quit.description" = "Esci dalle app alla chiusura dell'ultima finestra";
+"module.screenshot_auto_copy.name" = "Copia automatica istantanee";
+"module.screenshot_auto_copy.description" = "Copia le istantanee negli appunti invece di salvarle";
+"module.screenshot_auto_copy.also_save_to_folder" = "Salva anche in una cartella";
+"module.screenshot_auto_copy.choose_folder" = "Scegli…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Normalizzazione nomi file";
+"module.kfn.description" = "Rinomina automaticamente i nomi decomposti (NFD) in NFC";
+"module.kfn.add_folder" = "Aggiungi cartella…";
+"module.kfn.watched_folders" = "Cartelle monitorate";
+"module.kfn.no_folders" = "Nessuna cartella configurata. Aggiungi una cartella da monitorare.";
+"module.kfn.remove_folder" = "Rimuovi cartella";
+
+/* Settings */
+"settings.launch_at_login" = "Apri al login";
+"settings.show_hidden_files" = "Mostra file nascosti";
+"settings.check_for_updates" = "Verifica aggiornamenti…";
+"settings.screenshot.title" = "Istantanea schermo";
+"settings.screenshot.format" = "Formato";
+"settings.screenshot.save_location" = "Posizione";
+"settings.screenshot.browse" = "Scegli cartella…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Versione %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Lingua";
+"panel.settings" = "Impostazioni";
+"panel.quit" = "Esci";
+
+/* Status */
+"status.coming_soon" = "In arrivo";
+"status.accessibility_required" = "Richiede Accessibilità";
+"status.open_settings" = "Apri Impostazioni";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Disattiva accelerazione";
+"label.acceleration_curve" = "Curva di accelerazione";
+"label.low" = "Bassa";
+"label.high" = "Alta";
+"hint.mouse_acceleration" = "Disattiva per un movimento 1:1. Il valore predefinito è 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Sblocco temporaneo";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Moduli";
+"settings.panel_layout.title" = "Layout del pannello";
+"settings.panel_layout.description" = "Scegli quali moduli mostrare nel pannello della barra dei menu.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "Generali";
+"settings.tab.modules" = "Moduli";
+"settings.tab.panel" = "Pannello";
+"settings.tab.about" = "Info";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Ripetizione tasti";
+"module.key_repeat.description" = "Ripetizione della tastiera più veloce di quanto consentito da Impostazioni di Sistema";
+"module.key_repeat.initial_delay" = "Ritardo prima della ripetizione";
+"module.key_repeat.repeat_rate" = "Velocità di ripetizione";
+"module.key_repeat.short" = "Breve";
+"module.key_repeat.long" = "Lungo";
+"module.key_repeat.fast" = "Veloce";
+"module.key_repeat.slow" = "Lenta";
+"module.key_repeat.hint" = "Le modifiche di velocità hanno effetto immediato; la disattivazione del popup degli accenti vale per le app avviate dopo.";
+"module.key_repeat.restore_defaults" = "Ripristina valori macOS";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Ordinamento Finder";
+"module.finder_sort.description" = "Ordine predefinito per le nuove cartelle del Finder";
+"module.finder_sort.sort_by" = "Ordina per";
+"module.finder_sort.hint" = "Vale per cartelle nuove o mai aperte; il Finder si riavvia per applicare la modifica. Le cartelle con impostazioni di vista salvate mantengono il proprio ordinamento.";
+"module.finder_sort.enforce" = "Mantieni ordinamento forzato";
+"module.finder_sort.enforce_hint" = "Riapplica periodicamente l'ordinamento a tutte le finestre aperte del Finder, incluse le cartelle con impostazioni di vista salvate. macOS chiederà una volta il permesso di controllare il Finder.";
+"module.finder_sort.option.name" = "Nome";
+"module.finder_sort.option.kind" = "Tipo";
+"module.finder_sort.option.date_modified" = "Data di modifica";
+"module.finder_sort.option.date_created" = "Data di creazione";
+"module.finder_sort.option.date_added" = "Data aggiunta";
+"module.finder_sort.option.size" = "Dimensione";
+"module.finder_sort.option.label" = "Tag";
+"module.finder_sort.option.grid" = "Allinea alla griglia";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Licenze open source";
+"settings.about.permissions.title" = "Permessi richiesti";
+"settings.about.permissions.used_by" = "Usato da:";
+"settings.about.permissions.accessibility.name" = "Accessibilità";
+"settings.about.permissions.accessibility.desc" = "Necessario per monitorare gli eventi di mouse e tastiera a livello di sistema. Concedilo in Impostazioni di Sistema > Privacy e sicurezza > Accessibilità.";
+"settings.about.permissions.files.name" = "File e cartelle";
+"settings.about.permissions.files.desc" = "Necessario per monitorare e rinominare i file nelle cartelle scelte. macOS lo richiede automaticamente al primo accesso a una cartella.";
+"settings.about.permissions.none_note" = "Tutti gli altri moduli funzionano senza permessi speciali.";

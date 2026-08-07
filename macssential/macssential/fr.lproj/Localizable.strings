@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Ancrage du Dock";
+"module.dock_anchor.description" = "Verrouiller le Dock sur un écran donné";
+"module.hidden_files.name" = "Fichiers cachés";
+"module.hidden_files.description" = "Afficher les fichiers cachés dans le Finder";
+"module.scroll_direction.name" = "Sens de défilement";
+"module.scroll_direction.description" = "Dissocier le défilement de la souris et du trackpad";
+"module.mouse_acceleration.name" = "Accélération de la souris";
+"module.mouse_acceleration.description" = "Désactiver ou régler l'accélération de la souris";
+"module.dock_autohide.name" = "Masquage auto du Dock";
+"module.dock_autohide.description" = "Masquer et afficher automatiquement le Dock";
+"module.dock_recent_apps.name" = "Masquer les apps récentes";
+"module.dock_recent_apps.description" = "Retirer les apps récentes du Dock";
+"module.green_button.name" = "Agrandir via la barre de titre";
+"module.green_button.description" = "Double-clic sur la barre de titre pour agrandir au lieu du plein écran";
+"module.close_quit.name" = "Fermer pour quitter";
+"module.close_quit.description" = "Quitter les apps à la fermeture de leur dernière fenêtre";
+"module.screenshot_auto_copy.name" = "Copie auto des captures";
+"module.screenshot_auto_copy.description" = "Copier les captures dans le presse-papiers au lieu de les enregistrer";
+"module.screenshot_auto_copy.also_save_to_folder" = "Enregistrer aussi dans un dossier";
+"module.screenshot_auto_copy.choose_folder" = "Choisir…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Normalisation des noms de fichiers";
+"module.kfn.description" = "Renommer automatiquement les noms décomposés (NFD) en NFC";
+"module.kfn.add_folder" = "Ajouter un dossier…";
+"module.kfn.watched_folders" = "Dossiers surveillés";
+"module.kfn.no_folders" = "Aucun dossier configuré. Ajoutez un dossier à surveiller.";
+"module.kfn.remove_folder" = "Supprimer le dossier";
+
+/* Settings */
+"settings.launch_at_login" = "Ouvrir à la connexion";
+"settings.show_hidden_files" = "Afficher les fichiers cachés";
+"settings.check_for_updates" = "Rechercher les mises à jour…";
+"settings.screenshot.title" = "Capture d'écran";
+"settings.screenshot.format" = "Format";
+"settings.screenshot.save_location" = "Emplacement";
+"settings.screenshot.browse" = "Choisir un dossier…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Version %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Langue";
+"panel.settings" = "Réglages";
+"panel.quit" = "Quitter";
+
+/* Status */
+"status.coming_soon" = "Bientôt disponible";
+"status.accessibility_required" = "Accessibilité requise";
+"status.open_settings" = "Ouvrir les Réglages";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Désactiver l'accélération";
+"label.acceleration_curve" = "Courbe d'accélération";
+"label.low" = "Faible";
+"label.high" = "Élevée";
+"hint.mouse_acceleration" = "Désactivez pour un mouvement 1:1. La valeur par défaut est 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Déverrouillage temporaire";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Modules";
+"settings.panel_layout.title" = "Disposition du panneau";
+"settings.panel_layout.description" = "Choisissez les modules affichés dans le panneau de la barre des menus.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "Général";
+"settings.tab.modules" = "Modules";
+"settings.tab.panel" = "Panneau";
+"settings.tab.about" = "À propos";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Répétition des touches";
+"module.key_repeat.description" = "Répétition du clavier plus rapide que ne le permet Réglages Système";
+"module.key_repeat.initial_delay" = "Délai avant répétition";
+"module.key_repeat.repeat_rate" = "Vitesse de répétition";
+"module.key_repeat.short" = "Court";
+"module.key_repeat.long" = "Long";
+"module.key_repeat.fast" = "Rapide";
+"module.key_repeat.slow" = "Lente";
+"module.key_repeat.hint" = "Les changements de vitesse s'appliquent immédiatement ; la désactivation de la fenêtre d'accents s'applique aux apps lancées ensuite.";
+"module.key_repeat.restore_defaults" = "Restaurer les réglages macOS";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Tri du Finder";
+"module.finder_sort.description" = "Ordre de tri par défaut des nouveaux dossiers du Finder";
+"module.finder_sort.sort_by" = "Trier par";
+"module.finder_sort.hint" = "S'applique aux dossiers nouveaux ou jamais ouverts ; le Finder redémarre pour appliquer le changement. Les dossiers avec des réglages de présentation enregistrés conservent leur tri.";
+"module.finder_sort.enforce" = "Forcer le maintien du tri";
+"module.finder_sort.enforce_hint" = "Réapplique périodiquement le tri à toutes les fenêtres ouvertes du Finder, y compris les dossiers avec des réglages de présentation enregistrés. macOS demandera une fois l'autorisation de contrôler le Finder.";
+"module.finder_sort.option.name" = "Nom";
+"module.finder_sort.option.kind" = "Type";
+"module.finder_sort.option.date_modified" = "Date de modification";
+"module.finder_sort.option.date_created" = "Date de création";
+"module.finder_sort.option.date_added" = "Date d'ajout";
+"module.finder_sort.option.size" = "Taille";
+"module.finder_sort.option.label" = "Tags";
+"module.finder_sort.option.grid" = "Aligner sur la grille";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Licences open source";
+"settings.about.permissions.title" = "Autorisations requises";
+"settings.about.permissions.used_by" = "Utilisé par :";
+"settings.about.permissions.accessibility.name" = "Accessibilité";
+"settings.about.permissions.accessibility.desc" = "Nécessaire pour surveiller les événements souris et clavier à l'échelle du système. Accordez-la dans Réglages Système > Confidentialité et sécurité > Accessibilité.";
+"settings.about.permissions.files.name" = "Fichiers et dossiers";
+"settings.about.permissions.files.desc" = "Nécessaire pour surveiller et renommer les fichiers des dossiers choisis. macOS le demande automatiquement au premier accès à un dossier.";
+"settings.about.permissions.none_note" = "Tous les autres modules fonctionnent sans autorisation particulière.";

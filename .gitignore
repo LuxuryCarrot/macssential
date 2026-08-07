@@ -1,0 +1,4 @@
+build/
+.DS_Store
+.env.release
+scripts/.sparkle-tools/

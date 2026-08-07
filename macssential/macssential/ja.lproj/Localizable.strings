@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Dock固定";
+"module.dock_anchor.description" = "Dockを特定のモニターに固定";
+"module.hidden_files.name" = "隠しファイル";
+"module.hidden_files.description" = "Finderで隠しファイルを表示";
+"module.scroll_direction.name" = "スクロール方向";
+"module.scroll_direction.description" = "マウスとトラックパッドのスクロールを分離";
+"module.mouse_acceleration.name" = "マウス加速";
+"module.mouse_acceleration.description" = "マウス加速を無効化または調整";
+"module.dock_autohide.name" = "Dockの自動非表示";
+"module.dock_autohide.description" = "Dockを自動的に隠す/表示する";
+"module.dock_recent_apps.name" = "最近のアプリを非表示";
+"module.dock_recent_apps.description" = "Dockから最近使ったアプリを削除";
+"module.green_button.name" = "タイトルバー最大化";
+"module.green_button.description" = "タイトルバーのダブルクリックでフルスクリーンの代わりに最大化";
+"module.close_quit.name" = "閉じたら終了";
+"module.close_quit.description" = "最後のウィンドウを閉じるとアプリを終了";
+"module.screenshot_auto_copy.name" = "スクリーンショット自動コピー";
+"module.screenshot_auto_copy.description" = "スクリーンショットをファイル保存せずクリップボードに直接コピー";
+"module.screenshot_auto_copy.also_save_to_folder" = "フォルダにも保存";
+"module.screenshot_auto_copy.choose_folder" = "選択...";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "ファイル名正規化";
+"module.kfn.description" = "濁点・半濁点が分解されたファイル名（NFD）をNFCに自動変換";
+"module.kfn.add_folder" = "フォルダを追加...";
+"module.kfn.watched_folders" = "監視フォルダ";
+"module.kfn.no_folders" = "フォルダが設定されていません。フォルダを追加してください。";
+"module.kfn.remove_folder" = "フォルダを削除";
+
+/* Settings */
+"settings.launch_at_login" = "ログイン時に起動";
+"settings.show_hidden_files" = "隠しファイルを表示";
+"settings.check_for_updates" = "アップデートを確認...";
+"settings.screenshot.title" = "スクリーンショット";
+"settings.screenshot.format" = "フォーマット";
+"settings.screenshot.save_location" = "保存先";
+"settings.screenshot.browse" = "フォルダを選択...";
+"settings.about.title" = "macssential";
+"settings.about.version" = "バージョン %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "言語";
+"panel.settings" = "設定";
+"panel.quit" = "終了";
+
+/* Status */
+"status.coming_soon" = "近日公開";
+"status.accessibility_required" = "アクセシビリティ権限が必要";
+"status.open_settings" = "設定を開く";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "加速を無効化";
+"label.acceleration_curve" = "加速カーブ";
+"label.low" = "低";
+"label.high" = "高";
+"hint.mouse_acceleration" = "1:1マウス移動のために無効化。デフォルトは3。";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "一時的なロック解除";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "モジュール";
+"settings.panel_layout.title" = "パネル構成";
+"settings.panel_layout.description" = "メニューバーパネルに表示するモジュールを選択します。";
+
+/* Settings — Tabs */
+"settings.tab.general" = "一般";
+"settings.tab.modules" = "モジュール";
+"settings.tab.panel" = "パネル";
+"settings.tab.about" = "情報";
+
+/* Key Repeat */
+"module.key_repeat.name" = "キーリピート";
+"module.key_repeat.description" = "システム設定の上限を超える高速キーリピート";
+"module.key_repeat.initial_delay" = "リピート開始までの時間";
+"module.key_repeat.repeat_rate" = "リピート速度";
+"module.key_repeat.short" = "短い";
+"module.key_repeat.long" = "長い";
+"module.key_repeat.fast" = "速い";
+"module.key_repeat.slow" = "遅い";
+"module.key_repeat.hint" = "速度の変更はすぐに反映され、アクセント入力ポップアップの無効化はその後起動したアプリから適用されます。";
+"module.key_repeat.restore_defaults" = "macOS デフォルトに戻す";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Finder 並べ替え";
+"module.finder_sort.description" = "新しい Finder フォルダのデフォルト並び順";
+"module.finder_sort.sort_by" = "並べ替え順序";
+"module.finder_sort.hint" = "新規または未表示のフォルダに適用され、反映のため Finder が再起動します。表示設定が保存されたフォルダは既存の並び順を維持します。";
+"module.finder_sort.enforce" = "並び順を常に維持";
+"module.finder_sort.enforce_hint" = "開いているすべての Finder ウインドウに並び順を定期的に再適用します。表示設定が保存されたフォルダにも適用されます。初回使用時に macOS が Finder を制御する許可を一度求めます。";
+"module.finder_sort.option.name" = "名前";
+"module.finder_sort.option.kind" = "種類";
+"module.finder_sort.option.date_modified" = "変更日";
+"module.finder_sort.option.date_created" = "作成日";
+"module.finder_sort.option.date_added" = "追加日";
+"module.finder_sort.option.size" = "サイズ";
+"module.finder_sort.option.label" = "タグ";
+"module.finder_sort.option.grid" = "グリッドに沿う";
+
+/* Settings — About */
+"settings.about.licenses.title" = "オープンソースライセンス";
+"settings.about.permissions.title" = "必要な権限";
+"settings.about.permissions.used_by" = "使用する機能:";
+"settings.about.permissions.accessibility.name" = "アクセシビリティ";
+"settings.about.permissions.accessibility.desc" = "システム全体のマウス・キーボードイベントを監視するために必要です。システム設定 > プライバシーとセキュリティ > アクセシビリティで許可してください。";
+"settings.about.permissions.files.name" = "ファイルとフォルダ";
+"settings.about.permissions.files.desc" = "選択したフォルダ内のファイルを監視・リネームするために必要です。フォルダに初めてアクセスする際に macOS が自動的に確認します。";
+"settings.about.permissions.none_note" = "その他のモジュールは特別な権限なしで動作します。";

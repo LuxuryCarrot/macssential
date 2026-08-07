@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Anclar el Dock";
+"module.dock_anchor.description" = "Fijar el Dock a un monitor concreto";
+"module.hidden_files.name" = "Archivos ocultos";
+"module.hidden_files.description" = "Mostrar archivos ocultos en el Finder";
+"module.scroll_direction.name" = "Dirección de desplazamiento";
+"module.scroll_direction.description" = "Separar el desplazamiento del ratón y del trackpad";
+"module.mouse_acceleration.name" = "Aceleración del ratón";
+"module.mouse_acceleration.description" = "Desactivar o ajustar la aceleración del ratón";
+"module.dock_autohide.name" = "Ocultar Dock automáticamente";
+"module.dock_autohide.description" = "Ocultar y mostrar el Dock automáticamente";
+"module.dock_recent_apps.name" = "Ocultar apps recientes";
+"module.dock_recent_apps.description" = "Quitar las apps recientes del Dock";
+"module.green_button.name" = "Maximizar con la barra de título";
+"module.green_button.description" = "Doble clic en la barra de título maximiza en vez de pantalla completa";
+"module.close_quit.name" = "Cerrar para salir";
+"module.close_quit.description" = "Salir de las apps al cerrar su última ventana";
+"module.screenshot_auto_copy.name" = "Autocopiar capturas";
+"module.screenshot_auto_copy.description" = "Copiar capturas al portapapeles en vez de guardarlas";
+"module.screenshot_auto_copy.also_save_to_folder" = "Guardar también en carpeta";
+"module.screenshot_auto_copy.choose_folder" = "Seleccionar…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Normalizador de nombres de archivo";
+"module.kfn.description" = "Renombrar automáticamente nombres descompuestos (NFD) a NFC";
+"module.kfn.add_folder" = "Añadir carpeta…";
+"module.kfn.watched_folders" = "Carpetas vigiladas";
+"module.kfn.no_folders" = "No hay carpetas configuradas. Añade una carpeta para vigilar.";
+"module.kfn.remove_folder" = "Eliminar carpeta";
+
+/* Settings */
+"settings.launch_at_login" = "Abrir al iniciar sesión";
+"settings.show_hidden_files" = "Mostrar archivos ocultos";
+"settings.check_for_updates" = "Buscar actualizaciones…";
+"settings.screenshot.title" = "Captura de pantalla";
+"settings.screenshot.format" = "Formato";
+"settings.screenshot.save_location" = "Ubicación";
+"settings.screenshot.browse" = "Seleccionar carpeta…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Versión %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Idioma";
+"panel.settings" = "Ajustes";
+"panel.quit" = "Salir";
+
+/* Status */
+"status.coming_soon" = "Próximamente";
+"status.accessibility_required" = "Requiere Accesibilidad";
+"status.open_settings" = "Abrir Ajustes";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Desactivar aceleración";
+"label.acceleration_curve" = "Curva de aceleración";
+"label.low" = "Baja";
+"label.high" = "Alta";
+"hint.mouse_acceleration" = "Desactívala para un movimiento 1:1. El valor por omisión es 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Desbloqueo temporal";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Módulos";
+"settings.panel_layout.title" = "Disposición del panel";
+"settings.panel_layout.description" = "Elige qué módulos aparecen en el panel de la barra de menús.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "General";
+"settings.tab.modules" = "Módulos";
+"settings.tab.panel" = "Panel";
+"settings.tab.about" = "Acerca de";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Repetición de tecla";
+"module.key_repeat.description" = "Repetición del teclado más rápida de lo que permite Ajustes del Sistema";
+"module.key_repeat.initial_delay" = "Retardo hasta repetir";
+"module.key_repeat.repeat_rate" = "Velocidad de repetición";
+"module.key_repeat.short" = "Corto";
+"module.key_repeat.long" = "Largo";
+"module.key_repeat.fast" = "Rápida";
+"module.key_repeat.slow" = "Lenta";
+"module.key_repeat.hint" = "Los cambios de velocidad se aplican de inmediato; la desactivación del panel de acentos se aplica a las apps abiertas después.";
+"module.key_repeat.restore_defaults" = "Restaurar valores de macOS";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Orden del Finder";
+"module.finder_sort.description" = "Orden predeterminado para carpetas nuevas del Finder";
+"module.finder_sort.sort_by" = "Ordenar por";
+"module.finder_sort.hint" = "Se aplica a carpetas nuevas o nunca visitadas; el Finder se reinicia para aplicar el cambio. Las carpetas con ajustes de visualización guardados conservan su orden.";
+"module.finder_sort.enforce" = "Mantener orden forzado";
+"module.finder_sort.enforce_hint" = "Vuelve a aplicar el orden periódicamente a todas las ventanas abiertas del Finder, incluidas las carpetas con ajustes de visualización guardados. macOS pedirá una vez permiso para controlar el Finder.";
+"module.finder_sort.option.name" = "Nombre";
+"module.finder_sort.option.kind" = "Tipo";
+"module.finder_sort.option.date_modified" = "Fecha de modificación";
+"module.finder_sort.option.date_created" = "Fecha de creación";
+"module.finder_sort.option.date_added" = "Fecha de incorporación";
+"module.finder_sort.option.size" = "Tamaño";
+"module.finder_sort.option.label" = "Etiquetas";
+"module.finder_sort.option.grid" = "Ajustar a la cuadrícula";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Licencias de código abierto";
+"settings.about.permissions.title" = "Permisos necesarios";
+"settings.about.permissions.used_by" = "Usado por:";
+"settings.about.permissions.accessibility.name" = "Accesibilidad";
+"settings.about.permissions.accessibility.desc" = "Necesario para monitorizar eventos de ratón y teclado en todo el sistema. Concédelo en Ajustes del Sistema > Privacidad y seguridad > Accesibilidad.";
+"settings.about.permissions.files.name" = "Archivos y carpetas";
+"settings.about.permissions.files.desc" = "Necesario para vigilar y renombrar archivos en las carpetas que elijas. macOS lo solicita automáticamente al acceder a una carpeta por primera vez.";
+"settings.about.permissions.none_note" = "Todos los demás módulos funcionan sin permisos especiales.";

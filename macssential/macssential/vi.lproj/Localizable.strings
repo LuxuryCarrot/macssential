@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Neo Dock";
+"module.dock_anchor.description" = "Khóa Dock vào một màn hình cụ thể";
+"module.hidden_files.name" = "Tệp ẩn";
+"module.hidden_files.description" = "Hiện tệp ẩn trong Finder";
+"module.scroll_direction.name" = "Hướng cuộn";
+"module.scroll_direction.description" = "Tách riêng hướng cuộn của chuột và bàn di";
+"module.mouse_acceleration.name" = "Gia tốc chuột";
+"module.mouse_acceleration.description" = "Tắt hoặc điều chỉnh gia tốc chuột";
+"module.dock_autohide.name" = "Tự động ẩn Dock";
+"module.dock_autohide.description" = "Tự động ẩn và hiện Dock";
+"module.dock_recent_apps.name" = "Ẩn ứng dụng gần đây";
+"module.dock_recent_apps.description" = "Gỡ các ứng dụng gần đây khỏi Dock";
+"module.green_button.name" = "Phóng to bằng thanh tiêu đề";
+"module.green_button.description" = "Bấm đúp thanh tiêu đề để phóng to thay vì toàn màn hình";
+"module.close_quit.name" = "Đóng là thoát";
+"module.close_quit.description" = "Thoát ứng dụng khi đóng cửa sổ cuối cùng";
+"module.screenshot_auto_copy.name" = "Tự sao chép ảnh chụp màn hình";
+"module.screenshot_auto_copy.description" = "Sao chép ảnh chụp màn hình vào bảng nhớ tạm thay vì lưu tệp";
+"module.screenshot_auto_copy.also_save_to_folder" = "Đồng thời lưu vào thư mục";
+"module.screenshot_auto_copy.choose_folder" = "Chọn…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Chuẩn hóa tên tệp";
+"module.kfn.description" = "Tự động đổi tên tệp dạng phân rã (NFD) sang NFC";
+"module.kfn.add_folder" = "Thêm thư mục…";
+"module.kfn.watched_folders" = "Thư mục theo dõi";
+"module.kfn.no_folders" = "Chưa cấu hình thư mục nào. Hãy thêm thư mục cần theo dõi.";
+"module.kfn.remove_folder" = "Xóa thư mục";
+
+/* Settings */
+"settings.launch_at_login" = "Mở khi đăng nhập";
+"settings.show_hidden_files" = "Hiện tệp ẩn";
+"settings.check_for_updates" = "Kiểm tra bản cập nhật…";
+"settings.screenshot.title" = "Chụp màn hình";
+"settings.screenshot.format" = "Định dạng";
+"settings.screenshot.save_location" = "Vị trí lưu";
+"settings.screenshot.browse" = "Chọn thư mục…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Phiên bản %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Ngôn ngữ";
+"panel.settings" = "Cài đặt";
+"panel.quit" = "Thoát";
+
+/* Status */
+"status.coming_soon" = "Sắp ra mắt";
+"status.accessibility_required" = "Cần quyền Trợ năng";
+"status.open_settings" = "Mở Cài đặt";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Tắt gia tốc";
+"label.acceleration_curve" = "Đường cong gia tốc";
+"label.low" = "Thấp";
+"label.high" = "Cao";
+"hint.mouse_acceleration" = "Tắt để chuột di chuyển 1:1. Mặc định là 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Mở khóa tạm thời";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Mô-đun";
+"settings.panel_layout.title" = "Bố cục bảng điều khiển";
+"settings.panel_layout.description" = "Chọn các mô-đun hiển thị trong bảng của thanh menu.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "Chung";
+"settings.tab.modules" = "Mô-đun";
+"settings.tab.panel" = "Bảng";
+"settings.tab.about" = "Giới thiệu";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Lặp phím";
+"module.key_repeat.description" = "Lặp phím nhanh hơn giới hạn của Cài đặt Hệ thống";
+"module.key_repeat.initial_delay" = "Độ trễ trước khi lặp";
+"module.key_repeat.repeat_rate" = "Tốc độ lặp";
+"module.key_repeat.short" = "Ngắn";
+"module.key_repeat.long" = "Dài";
+"module.key_repeat.fast" = "Nhanh";
+"module.key_repeat.slow" = "Chậm";
+"module.key_repeat.hint" = "Thay đổi tốc độ có hiệu lực ngay; việc tắt cửa sổ dấu trọng âm áp dụng cho ứng dụng mở sau đó.";
+"module.key_repeat.restore_defaults" = "Khôi phục mặc định macOS";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Sắp xếp Finder";
+"module.finder_sort.description" = "Thứ tự sắp xếp mặc định cho thư mục Finder mới";
+"module.finder_sort.sort_by" = "Sắp xếp theo";
+"module.finder_sort.hint" = "Áp dụng cho thư mục mới hoặc chưa từng mở; Finder sẽ khởi động lại để có hiệu lực. Thư mục đã lưu cài đặt hiển thị sẽ giữ nguyên thứ tự.";
+"module.finder_sort.enforce" = "Luôn giữ thứ tự sắp xếp";
+"module.finder_sort.enforce_hint" = "Định kỳ áp dụng lại thứ tự sắp xếp cho tất cả cửa sổ Finder đang mở, kể cả thư mục đã lưu cài đặt hiển thị. macOS sẽ hỏi quyền điều khiển Finder một lần khi dùng lần đầu.";
+"module.finder_sort.option.name" = "Tên";
+"module.finder_sort.option.kind" = "Loại";
+"module.finder_sort.option.date_modified" = "Ngày sửa đổi";
+"module.finder_sort.option.date_created" = "Ngày tạo";
+"module.finder_sort.option.date_added" = "Ngày thêm";
+"module.finder_sort.option.size" = "Kích cỡ";
+"module.finder_sort.option.label" = "Thẻ";
+"module.finder_sort.option.grid" = "Căn theo lưới";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Giấy phép mã nguồn mở";
+"settings.about.permissions.title" = "Quyền cần thiết";
+"settings.about.permissions.used_by" = "Dùng bởi:";
+"settings.about.permissions.accessibility.name" = "Trợ năng";
+"settings.about.permissions.accessibility.desc" = "Cần để theo dõi sự kiện chuột và bàn phím trên toàn hệ thống. Hãy cấp quyền trong Cài đặt Hệ thống > Quyền riêng tư & Bảo mật > Trợ năng.";
+"settings.about.permissions.files.name" = "Tệp và Thư mục";
+"settings.about.permissions.files.desc" = "Cần để theo dõi và đổi tên tệp trong các thư mục bạn chọn. macOS sẽ tự hỏi khi truy cập thư mục lần đầu.";
+"settings.about.permissions.none_note" = "Tất cả các mô-đun khác hoạt động mà không cần quyền đặc biệt.";

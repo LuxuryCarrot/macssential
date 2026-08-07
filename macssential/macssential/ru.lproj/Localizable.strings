@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Привязка Dock";
+"module.dock_anchor.description" = "Закрепить Dock на выбранном мониторе";
+"module.hidden_files.name" = "Скрытые файлы";
+"module.hidden_files.description" = "Показывать скрытые файлы в Finder";
+"module.scroll_direction.name" = "Направление прокрутки";
+"module.scroll_direction.description" = "Раздельная прокрутка для мыши и трекпада";
+"module.mouse_acceleration.name" = "Ускорение мыши";
+"module.mouse_acceleration.description" = "Отключить или настроить ускорение мыши";
+"module.dock_autohide.name" = "Автоскрытие Dock";
+"module.dock_autohide.description" = "Автоматически скрывать и показывать Dock";
+"module.dock_recent_apps.name" = "Скрыть недавние программы";
+"module.dock_recent_apps.description" = "Убрать недавние программы из Dock";
+"module.green_button.name" = "Развернуть по строке заголовка";
+"module.green_button.description" = "Двойной щелчок по заголовку разворачивает окно вместо полноэкранного режима";
+"module.close_quit.name" = "Закрыть — значит выйти";
+"module.close_quit.description" = "Завершать программу при закрытии её последнего окна";
+"module.screenshot_auto_copy.name" = "Автокопирование снимков экрана";
+"module.screenshot_auto_copy.description" = "Копировать снимки экрана в буфер обмена вместо сохранения";
+"module.screenshot_auto_copy.also_save_to_folder" = "Также сохранять в папку";
+"module.screenshot_auto_copy.choose_folder" = "Выбрать…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Нормализация имён файлов";
+"module.kfn.description" = "Автоматически переименовывать разложенные (NFD) имена в NFC";
+"module.kfn.add_folder" = "Добавить папку…";
+"module.kfn.watched_folders" = "Отслеживаемые папки";
+"module.kfn.no_folders" = "Папки не настроены. Добавьте папку для отслеживания.";
+"module.kfn.remove_folder" = "Удалить папку";
+
+/* Settings */
+"settings.launch_at_login" = "Запускать при входе";
+"settings.show_hidden_files" = "Показывать скрытые файлы";
+"settings.check_for_updates" = "Проверить обновления…";
+"settings.screenshot.title" = "Снимок экрана";
+"settings.screenshot.format" = "Формат";
+"settings.screenshot.save_location" = "Расположение";
+"settings.screenshot.browse" = "Выбрать папку…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Версия %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Язык";
+"panel.settings" = "Настройки";
+"panel.quit" = "Завершить";
+
+/* Status */
+"status.coming_soon" = "Скоро";
+"status.accessibility_required" = "Требуется Универсальный доступ";
+"status.open_settings" = "Открыть настройки";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Отключить ускорение";
+"label.acceleration_curve" = "Кривая ускорения";
+"label.low" = "Низкое";
+"label.high" = "Высокое";
+"hint.mouse_acceleration" = "Отключите для движения 1:1. Значение по умолчанию — 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Временная разблокировка";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Модули";
+"settings.panel_layout.title" = "Компоновка панели";
+"settings.panel_layout.description" = "Выберите, какие модули отображаются в панели строки меню.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "Основные";
+"settings.tab.modules" = "Модули";
+"settings.tab.panel" = "Панель";
+"settings.tab.about" = "О программе";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Повтор клавиш";
+"module.key_repeat.description" = "Более быстрый повтор клавиш, чем позволяют Системные настройки";
+"module.key_repeat.initial_delay" = "Задержка перед повтором";
+"module.key_repeat.repeat_rate" = "Частота повтора";
+"module.key_repeat.short" = "Короткая";
+"module.key_repeat.long" = "Длинная";
+"module.key_repeat.fast" = "Быстро";
+"module.key_repeat.slow" = "Медленно";
+"module.key_repeat.hint" = "Изменения скорости применяются сразу; отключение всплывающего окна акцентов действует для приложений, запущенных после.";
+"module.key_repeat.restore_defaults" = "Восстановить значения macOS";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Сортировка Finder";
+"module.finder_sort.description" = "Порядок сортировки по умолчанию для новых папок Finder";
+"module.finder_sort.sort_by" = "Сортировать по";
+"module.finder_sort.hint" = "Действует для новых или ещё не открывавшихся папок; для применения Finder перезапускается. Папки с сохранёнными настройками вида сохраняют свой порядок.";
+"module.finder_sort.enforce" = "Принудительно сохранять порядок";
+"module.finder_sort.enforce_hint" = "Периодически повторно применяет сортировку ко всем открытым окнам Finder, включая папки с сохранёнными настройками вида. macOS один раз запросит разрешение на управление Finder.";
+"module.finder_sort.option.name" = "Имя";
+"module.finder_sort.option.kind" = "Тип";
+"module.finder_sort.option.date_modified" = "Дата изменения";
+"module.finder_sort.option.date_created" = "Дата создания";
+"module.finder_sort.option.date_added" = "Дата добавления";
+"module.finder_sort.option.size" = "Размер";
+"module.finder_sort.option.label" = "Теги";
+"module.finder_sort.option.grid" = "Привязать к сетке";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Лицензии открытого ПО";
+"settings.about.permissions.title" = "Необходимые разрешения";
+"settings.about.permissions.used_by" = "Используется:";
+"settings.about.permissions.accessibility.name" = "Универсальный доступ";
+"settings.about.permissions.accessibility.desc" = "Требуется для отслеживания событий мыши и клавиатуры во всей системе. Разрешите в Системных настройках > Конфиденциальность и безопасность > Универсальный доступ.";
+"settings.about.permissions.files.name" = "Файлы и папки";
+"settings.about.permissions.files.desc" = "Требуется для отслеживания и переименования файлов в выбранных папках. macOS запросит разрешение автоматически при первом обращении к папке.";
+"settings.about.permissions.none_note" = "Все остальные модули работают без специальных разрешений.";

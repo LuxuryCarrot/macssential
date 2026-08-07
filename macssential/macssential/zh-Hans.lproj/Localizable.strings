@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "程序坞锚定";
+"module.dock_anchor.description" = "将程序坞固定在指定显示器";
+"module.hidden_files.name" = "隐藏文件";
+"module.hidden_files.description" = "在访达中显示隐藏文件";
+"module.scroll_direction.name" = "滚动方向";
+"module.scroll_direction.description" = "分别设置鼠标和触控板的滚动方向";
+"module.mouse_acceleration.name" = "鼠标加速";
+"module.mouse_acceleration.description" = "禁用或调整鼠标加速";
+"module.dock_autohide.name" = "程序坞自动隐藏";
+"module.dock_autohide.description" = "自动隐藏和显示程序坞";
+"module.dock_recent_apps.name" = "隐藏最近使用的 App";
+"module.dock_recent_apps.description" = "从程序坞移除最近使用的 App";
+"module.green_button.name" = "标题栏最大化";
+"module.green_button.description" = "双击标题栏时最大化窗口而非进入全屏";
+"module.close_quit.name" = "关闭即退出";
+"module.close_quit.description" = "关闭最后一个窗口时退出 App";
+"module.screenshot_auto_copy.name" = "截图自动拷贝";
+"module.screenshot_auto_copy.description" = "将截图拷贝到剪贴板而非存储为文件";
+"module.screenshot_auto_copy.also_save_to_folder" = "同时存储到文件夹";
+"module.screenshot_auto_copy.choose_folder" = "选择…";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "文件名规范化";
+"module.kfn.description" = "自动将分解形式（NFD）的文件名重命名为 NFC";
+"module.kfn.add_folder" = "添加文件夹…";
+"module.kfn.watched_folders" = "监视的文件夹";
+"module.kfn.no_folders" = "尚未配置文件夹。请添加要监视的文件夹。";
+"module.kfn.remove_folder" = "移除文件夹";
+
+/* Settings */
+"settings.launch_at_login" = "登录时启动";
+"settings.show_hidden_files" = "显示隐藏文件";
+"settings.check_for_updates" = "检查更新…";
+"settings.screenshot.title" = "截图";
+"settings.screenshot.format" = "格式";
+"settings.screenshot.save_location" = "存储位置";
+"settings.screenshot.browse" = "选择文件夹…";
+"settings.about.title" = "macssential";
+"settings.about.version" = "版本 %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "语言";
+"panel.settings" = "设置";
+"panel.quit" = "退出";
+
+/* Status */
+"status.coming_soon" = "即将推出";
+"status.accessibility_required" = "需要辅助功能权限";
+"status.open_settings" = "打开设置";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "禁用加速";
+"label.acceleration_curve" = "加速曲线";
+"label.low" = "低";
+"label.high" = "高";
+"hint.mouse_acceleration" = "禁用可获得 1:1 鼠标移动。默认值为 3。";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "临时解锁";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "模块";
+"settings.panel_layout.title" = "面板布局";
+"settings.panel_layout.description" = "选择在菜单栏面板中显示的模块。";
+
+/* Settings — Tabs */
+"settings.tab.general" = "通用";
+"settings.tab.modules" = "模块";
+"settings.tab.panel" = "面板";
+"settings.tab.about" = "关于";
+
+/* Key Repeat */
+"module.key_repeat.name" = "按键重复";
+"module.key_repeat.description" = "突破系统设置限制的更快按键重复";
+"module.key_repeat.initial_delay" = "重复前延迟";
+"module.key_repeat.repeat_rate" = "重复速率";
+"module.key_repeat.short" = "短";
+"module.key_repeat.long" = "长";
+"module.key_repeat.fast" = "快";
+"module.key_repeat.slow" = "慢";
+"module.key_repeat.hint" = "速度更改立即生效；重音弹窗的停用将对之后启动的应用生效。";
+"module.key_repeat.restore_defaults" = "恢复 macOS 默认值";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "访达排序";
+"module.finder_sort.description" = "新访达文件夹的默认排序方式";
+"module.finder_sort.sort_by" = "排序方式";
+"module.finder_sort.hint" = "适用于新建或未打开过的文件夹；生效时访达会重新启动。已保存显示设置的文件夹将保留原有排序。";
+"module.finder_sort.enforce" = "强制保持排序";
+"module.finder_sort.enforce_hint" = "定期对所有打开的访达窗口重新应用排序，包括已保存显示设置的文件夹。首次使用时 macOS 会请求一次控制访达的权限。";
+"module.finder_sort.option.name" = "名称";
+"module.finder_sort.option.kind" = "种类";
+"module.finder_sort.option.date_modified" = "修改日期";
+"module.finder_sort.option.date_created" = "创建日期";
+"module.finder_sort.option.date_added" = "添加日期";
+"module.finder_sort.option.size" = "大小";
+"module.finder_sort.option.label" = "标签";
+"module.finder_sort.option.grid" = "对齐到网格";
+
+/* Settings — About */
+"settings.about.licenses.title" = "开源许可证";
+"settings.about.permissions.title" = "所需权限";
+"settings.about.permissions.used_by" = "使用功能:";
+"settings.about.permissions.accessibility.name" = "辅助功能";
+"settings.about.permissions.accessibility.desc" = "用于监听系统范围的鼠标和键盘事件。请在系统设置 > 隐私与安全性 > 辅助功能中授权。";
+"settings.about.permissions.files.name" = "文件与文件夹";
+"settings.about.permissions.files.desc" = "用于监视并重命名所选文件夹中的文件。首次访问文件夹时 macOS 会自动询问。";
+"settings.about.permissions.none_note" = "其他所有模块无需任何特殊权限即可运行。";

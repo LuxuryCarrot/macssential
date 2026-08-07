@@ -1,0 +1,110 @@
+/* Module Names */
+"module.dock_anchor.name" = "Dock-Anker";
+"module.dock_anchor.description" = "Dock auf einem bestimmten Monitor festhalten";
+"module.hidden_files.name" = "Versteckte Dateien";
+"module.hidden_files.description" = "Versteckte Dateien im Finder anzeigen";
+"module.scroll_direction.name" = "Scrollrichtung";
+"module.scroll_direction.description" = "Maus- und Trackpad-Scrollen getrennt einstellen";
+"module.mouse_acceleration.name" = "Mausbeschleunigung";
+"module.mouse_acceleration.description" = "Mausbeschleunigung deaktivieren oder anpassen";
+"module.dock_autohide.name" = "Dock automatisch ausblenden";
+"module.dock_autohide.description" = "Dock automatisch aus- und einblenden";
+"module.dock_recent_apps.name" = "Zuletzt benutzte Apps ausblenden";
+"module.dock_recent_apps.description" = "Zuletzt benutzte Apps aus dem Dock entfernen";
+"module.green_button.name" = "Maximieren per Titelleiste";
+"module.green_button.description" = "Doppelklick auf die Titelleiste maximiert statt Vollbild";
+"module.close_quit.name" = "Beim Schließen beenden";
+"module.close_quit.description" = "Apps beenden, wenn ihr letztes Fenster geschlossen wird";
+"module.screenshot_auto_copy.name" = "Bildschirmfotos auto-kopieren";
+"module.screenshot_auto_copy.description" = "Bildschirmfotos in die Zwischenablage kopieren statt sichern";
+"module.screenshot_auto_copy.also_save_to_folder" = "Zusätzlich in Ordner sichern";
+"module.screenshot_auto_copy.choose_folder" = "Auswählen …";
+
+/* Korean Filename Normalizer */
+"module.kfn.name" = "Dateinamen-Normalisierung";
+"module.kfn.description" = "Zerlegte Dateinamen (NFD) automatisch in NFC umbenennen";
+"module.kfn.add_folder" = "Ordner hinzufügen …";
+"module.kfn.watched_folders" = "Überwachte Ordner";
+"module.kfn.no_folders" = "Keine Ordner konfiguriert. Füge einen Ordner hinzu.";
+"module.kfn.remove_folder" = "Ordner entfernen";
+
+/* Settings */
+"settings.launch_at_login" = "Bei Anmeldung starten";
+"settings.show_hidden_files" = "Versteckte Dateien anzeigen";
+"settings.check_for_updates" = "Nach Updates suchen …";
+"settings.screenshot.title" = "Bildschirmfoto";
+"settings.screenshot.format" = "Format";
+"settings.screenshot.save_location" = "Speicherort";
+"settings.screenshot.browse" = "Ordner auswählen …";
+"settings.about.title" = "macssential";
+"settings.about.version" = "Version %@";
+"settings.about.credits" = "by Dongkeun Lee";
+
+/* Panel */
+"panel.language" = "Sprache";
+"panel.settings" = "Einstellungen";
+"panel.quit" = "Beenden";
+
+/* Status */
+"status.coming_soon" = "Demnächst";
+"status.accessibility_required" = "Bedienungshilfen erforderlich";
+"status.open_settings" = "Einstellungen öffnen";
+
+/* Mouse Acceleration */
+"toggle.disable_acceleration" = "Beschleunigung deaktivieren";
+"label.acceleration_curve" = "Beschleunigungskurve";
+"label.low" = "Niedrig";
+"label.high" = "Hoch";
+"hint.mouse_acceleration" = "Deaktivieren für 1:1-Mausbewegung. Standardwert ist 3.";
+
+/* Dock Anchor */
+"label.temporary_unlock" = "Vorübergehend entsperren";
+
+/* Settings — Panel Layout & Modules */
+"settings.modules.title" = "Module";
+"settings.panel_layout.title" = "Panel-Layout";
+"settings.panel_layout.description" = "Wähle, welche Module im Menüleisten-Panel erscheinen.";
+
+/* Settings — Tabs */
+"settings.tab.general" = "Allgemein";
+"settings.tab.modules" = "Module";
+"settings.tab.panel" = "Panel";
+"settings.tab.about" = "Über";
+
+/* Key Repeat */
+"module.key_repeat.name" = "Tastenwiederholung";
+"module.key_repeat.description" = "Schnellere Tastenwiederholung als in den Systemeinstellungen möglich";
+"module.key_repeat.initial_delay" = "Verzögerung bis Wiederholung";
+"module.key_repeat.repeat_rate" = "Wiederholrate";
+"module.key_repeat.short" = "Kurz";
+"module.key_repeat.long" = "Lang";
+"module.key_repeat.fast" = "Schnell";
+"module.key_repeat.slow" = "Langsam";
+"module.key_repeat.hint" = "Geschwindigkeitsänderungen wirken sofort; das deaktivierte Akzent-Popup gilt für danach gestartete Apps.";
+"module.key_repeat.restore_defaults" = "macOS-Standard wiederherstellen";
+
+/* Finder Sort Module */
+"module.finder_sort.name" = "Finder-Sortierung";
+"module.finder_sort.description" = "Standard-Sortierreihenfolge für neue Finder-Ordner";
+"module.finder_sort.sort_by" = "Sortieren nach";
+"module.finder_sort.hint" = "Gilt für neue oder nie geöffnete Ordner; der Finder startet zur Übernahme neu. Ordner mit gespeicherten Darstellungseinstellungen behalten ihre Sortierung.";
+"module.finder_sort.enforce" = "Sortierung erzwingen";
+"module.finder_sort.enforce_hint" = "Wendet die Sortierung regelmäßig auf alle offenen Finder-Fenster an, auch auf Ordner mit gespeicherten Darstellungseinstellungen. macOS fragt einmalig nach der Berechtigung, den Finder zu steuern.";
+"module.finder_sort.option.name" = "Name";
+"module.finder_sort.option.kind" = "Art";
+"module.finder_sort.option.date_modified" = "Änderungsdatum";
+"module.finder_sort.option.date_created" = "Erstellungsdatum";
+"module.finder_sort.option.date_added" = "Hinzugefügt am";
+"module.finder_sort.option.size" = "Größe";
+"module.finder_sort.option.label" = "Tags";
+"module.finder_sort.option.grid" = "Am Raster ausrichten";
+
+/* Settings — About */
+"settings.about.licenses.title" = "Open-Source-Lizenzen";
+"settings.about.permissions.title" = "Erforderliche Berechtigungen";
+"settings.about.permissions.used_by" = "Verwendet von:";
+"settings.about.permissions.accessibility.name" = "Bedienungshilfen";
+"settings.about.permissions.accessibility.desc" = "Erforderlich, um systemweite Maus- und Tastaturereignisse zu überwachen. Erteilen Sie die Berechtigung unter Systemeinstellungen > Datenschutz & Sicherheit > Bedienungshilfen.";
+"settings.about.permissions.files.name" = "Dateien und Ordner";
+"settings.about.permissions.files.desc" = "Erforderlich, um Dateien in ausgewählten Ordnern zu überwachen und umzubenennen. macOS fragt beim ersten Zugriff auf einen Ordner automatisch nach.";
+"settings.about.permissions.none_note" = "Alle anderen Module funktionieren ohne besondere Berechtigungen.";
