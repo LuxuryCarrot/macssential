@@ -17,6 +17,7 @@ set -euo pipefail
 #   scripts/       (minus .sparkle-tools cache)
 #   packaging/     (minus releases-repo -- its READMEs go to the clone root)
 #   docs/          (GitHub Pages / Sparkle appcast)
+#   .github/       (FUNDING.yml)
 #   LICENSE, .gitignore, .env.release.example
 #   packaging/releases-repo/README*.md -> clone root README*.md
 #
@@ -87,6 +88,9 @@ rsync -a --delete "${EXCLUDES[@]}" --exclude "releases-repo" \
 
 echo "==> Syncing docs/ ..."
 rsync -a --delete "${EXCLUDES[@]}" docs/ "$CLONE/docs/"
+
+echo "==> Syncing .github/ ..."
+rsync -a --delete "${EXCLUDES[@]}" .github/ "$CLONE/.github/"
 
 # --- Sync top-level files (no --delete at clone root: preserves public-repo
 #     -only files such as a future .nojekyll) ---

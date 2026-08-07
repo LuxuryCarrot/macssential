@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
   <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support on Ko-fi"></a>
 </p>
 
 macssential 是一款面向 macOS 14+ 的菜单栏实用工具，让你只需一次点击就能掌控
@@ -89,6 +90,12 @@ App 内提示新版本——无需手动下载。
 ## 系统要求
 
 - macOS 14 Sonoma 或更高版本
+
+## 支持
+
+macssential 是免费的开源项目。如果它让你的 Mac 使用体验更加轻松，
+欢迎在 [Ko-fi](https://ko-fi.com/luxurycarrot) 上请开发者喝杯咖啡，
+支持项目开发。☕
 
 ---
 

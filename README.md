@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
   <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support on Ko-fi"></a>
 </p>
 
 macssential is a menu bar utility for macOS 14+ that lets you take control of
@@ -97,6 +98,12 @@ work without any special permissions.
 ## Requirements
 
 - macOS 14 Sonoma or later
+
+## Support
+
+macssential is free and open source. If it makes your Mac life easier,
+you can support development with a coffee on
+[Ko-fi](https://ko-fi.com/luxurycarrot). ☕
 
 ---
 

@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
   <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support on Ko-fi"></a>
 </p>
 
 macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본 동작을 클릭 한
@@ -96,6 +97,12 @@ Dock 고정, 스크롤 방향, 스크린샷 자동 복사 모듈은 손쉬운 �
 ## 요구 사항
 
 - macOS 14 Sonoma 이상
+
+## 후원
+
+macssential은 무료 오픈소스 프로젝트입니다. 이 앱이 Mac 사용을 더
+편하게 해 주었다면, [Ko-fi](https://ko-fi.com/luxurycarrot)에서 커피
+한 잔으로 개발을 응원해 주세요. ☕
 
 ---
 

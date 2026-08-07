@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform: macOS 14+">
   <img src="https://img.shields.io/badge/homebrew-cask-orange?style=flat-square" alt="Homebrew cask">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support on Ko-fi"></a>
 </p>
 
 macssentialはmacOS 14+向けのメニューバーユーティリティです。モニター間のDockの
@@ -97,6 +98,12 @@ Dock固定、スクロール方向、スクリーンショット自動コピー�
 ## 動作環境
 
 - macOS 14 Sonoma 以降
+
+## サポート
+
+macssential は無料のオープンソースプロジェクトです。このアプリが Mac
+ライフを快適にしてくれたら、[Ko-fi](https://ko-fi.com/luxurycarrot)
+でコーヒー一杯分の支援をいただけると嬉しいです。☕
 
 ---
 
