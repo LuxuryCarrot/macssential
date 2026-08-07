@@ -99,6 +99,14 @@ Dock固定、スクロール方向、スクリーンショット自動コピー�
 
 - macOS 14 Sonoma 以降
 
+## フィードバック
+
+バグの報告や機能のリクエストは
+[Issues](https://github.com/LuxuryCarrot/macssential/issues/new/choose)
+からお願いします。質問やアイデアの共有は
+[Discussions](https://github.com/LuxuryCarrot/macssential/discussions)
+をご利用ください。
+
 ## サポート
 
 macssential は無料のオープンソースプロジェクトです。このアプリが Mac

@@ -99,6 +99,13 @@ work without any special permissions.
 
 - macOS 14 Sonoma or later
 
+## Feedback
+
+Found a bug or have a feature idea? Open a
+[bug report or feature request](https://github.com/LuxuryCarrot/macssential/issues/new/choose)
+on the Issues page. For questions and open-ended ideas, join the conversation
+in [Discussions](https://github.com/LuxuryCarrot/macssential/discussions).
+
 ## Support
 
 macssential is free and open source. If it makes your Mac life easier,

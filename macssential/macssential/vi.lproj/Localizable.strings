@@ -39,6 +39,8 @@
 "settings.about.title" = "macssential";
 "settings.about.version" = "Phiên bản %@";
 "settings.about.credits" = "by Dongkeun Lee";
+"settings.about.feedback" = "Gửi phản hồi";
+"settings.about.feedback.caption" = "Báo lỗi hoặc đề xuất tính năng trên GitHub.";
 
 /* Panel */
 "panel.language" = "Ngôn ngữ";

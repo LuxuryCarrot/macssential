@@ -221,6 +221,22 @@ struct SettingsView: View {
                 .padding(.vertical, 12)
             }
 
+            Section {
+                Button(action: {
+                    if let url = URL(string: "https://github.com/LuxuryCarrot/macssential/issues/new/choose") {
+                        NSWorkspace.shared.open(url)
+                    }
+                }) {
+                    Label(String(localized: "settings.about.feedback"), systemImage: "exclamationmark.bubble")
+                }
+                .buttonStyle(.plain)
+                .foregroundColor(.accentColor)
+            } footer: {
+                Text(String(localized: "settings.about.feedback.caption"))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             Section(header: Text(String(localized: "settings.about.licenses.title"))) {
                 ForEach(AboutInfo.licenses) { license in
                     DisclosureGroup {

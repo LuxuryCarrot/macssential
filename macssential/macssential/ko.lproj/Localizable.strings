@@ -39,6 +39,8 @@
 "settings.about.title" = "macssential";
 "settings.about.version" = "버전 %@";
 "settings.about.credits" = "by Dongkeun Lee";
+"settings.about.feedback" = "피드백 보내기";
+"settings.about.feedback.caption" = "GitHub에서 버그를 신고하거나 기능을 제안해 주세요.";
 
 /* Panel */
 "panel.language" = "언어";

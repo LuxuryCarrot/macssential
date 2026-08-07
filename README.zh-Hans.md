@@ -91,6 +91,13 @@ App 内提示新版本——无需手动下载。
 
 - macOS 14 Sonoma 或更高版本
 
+## 反馈
+
+发现问题或有功能想法？请在
+[Issues](https://github.com/LuxuryCarrot/macssential/issues/new/choose)
+提交错误报告或功能请求。如有疑问或想交流想法，欢迎前往
+[Discussions](https://github.com/LuxuryCarrot/macssential/discussions)。
+
 ## 支持
 
 macssential 是免费的开源项目。如果它让你的 Mac 使用体验更加轻松，

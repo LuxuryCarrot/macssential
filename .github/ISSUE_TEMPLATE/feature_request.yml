@@ -1,0 +1,24 @@
+name: "Feature Request / 기능 제안"
+description: "Suggest a new feature or improvement. / 새로운 기능이나 개선 사항을 제안해 주세요."
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation / 문제 및 동기"
+      description: "What inconvenience or need prompted this idea? / 어떤 불편함이나 필요에서 이 아이디어가 나왔나요?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution / 제안하는 해결 방법"
+      description: "How would you like it to work? / 어떻게 동작하면 좋을까요?"
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered / 고려한 대안"
+    validations:
+      required: false

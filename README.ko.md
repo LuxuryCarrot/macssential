@@ -98,6 +98,14 @@ Dock 고정, 스크롤 방향, 스크린샷 자동 복사 모듈은 손쉬운 �
 
 - macOS 14 Sonoma 이상
 
+## 피드백
+
+버그를 발견했거나 기능 아이디어가 있다면
+[Issues](https://github.com/LuxuryCarrot/macssential/issues/new/choose)에서
+버그 신고 또는 기능 제안을 올려 주세요. 질문이나 자유로운 아이디어는
+[Discussions](https://github.com/LuxuryCarrot/macssential/discussions)에서
+나눌 수 있습니다.
+
 ## 후원
 
 macssential은 무료 오픈소스 프로젝트입니다. 이 앱이 Mac 사용을 더

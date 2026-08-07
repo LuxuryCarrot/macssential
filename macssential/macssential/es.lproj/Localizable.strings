@@ -39,6 +39,8 @@
 "settings.about.title" = "macssential";
 "settings.about.version" = "Versión %@";
 "settings.about.credits" = "by Dongkeun Lee";
+"settings.about.feedback" = "Enviar comentarios";
+"settings.about.feedback.caption" = "Informa de errores o sugiere funciones en GitHub.";
 
 /* Panel */
 "panel.language" = "Idioma";

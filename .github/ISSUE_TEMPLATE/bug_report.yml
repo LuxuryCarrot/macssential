@@ -1,0 +1,55 @@
+name: "Bug Report / 버그 신고"
+description: "Report something that isn't working correctly. / 제대로 동작하지 않는 문제를 신고해 주세요."
+labels: ["bug"]
+body:
+  - type: input
+    id: app_version
+    attributes:
+      label: "macssential version / macssential 버전"
+      description: "Found in Settings > About. / 설정 > 정보 탭에서 확인할 수 있습니다."
+      placeholder: "e.g. 0.1.6 (7)"
+    validations:
+      required: true
+  - type: input
+    id: macos_version
+    attributes:
+      label: "macOS version / macOS 버전"
+      placeholder: "e.g. macOS 15.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: "Affected module / 관련 모듈"
+      options:
+        - "Dock Anchor"
+        - "Dock Auto-Hide"
+        - "Hide Recent Apps"
+        - "Hidden Files"
+        - "Key Repeat"
+        - "Scroll Direction"
+        - "Screenshot Auto-Copy"
+        - "Filename Normalizer"
+        - "Other / 기타"
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: "What happened? / 어떤 문제가 발생했나요?"
+      description: "Describe the bug. Screenshots welcome. / 발생한 문제를 설명해 주세요. 스크린샷도 환영합니다."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / 재현 방법"
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / 기대한 동작"
+    validations:
+      required: false

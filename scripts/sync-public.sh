@@ -17,7 +17,7 @@ set -euo pipefail
 #   scripts/       (minus .sparkle-tools cache)
 #   packaging/     (minus releases-repo -- its READMEs go to the clone root)
 #   docs/          (GitHub Pages / Sparkle appcast)
-#   .github/       (FUNDING.yml)
+#   .github/       (FUNDING.yml, ISSUE_TEMPLATE/, workflows/)
 #   LICENSE, .gitignore, .env.release.example
 #   packaging/releases-repo/README*.md -> clone root README*.md
 #

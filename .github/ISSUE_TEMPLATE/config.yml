@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Questions & ideas / 질문과 아이디어"
+    url: "https://github.com/LuxuryCarrot/macssential/discussions"
+    about: "Ask questions or share ideas in GitHub Discussions. / GitHub Discussions에서 질문하거나 아이디어를 나눠 주세요."
+  - name: "Support on Ko-fi / Ko-fi 후원"
+    url: "https://ko-fi.com/luxurycarrot"
+    about: "Support macssential development with a coffee. / 커피 한 잔으로 개발을 응원해 주세요."
