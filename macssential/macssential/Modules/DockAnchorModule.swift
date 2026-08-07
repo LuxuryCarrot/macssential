@@ -131,7 +131,10 @@ final class DockAnchorModule: FeatureModule, @unchecked Sendable {
                     isAutoPaused: isAutoPaused
                 )
 
-                // Modifier key selector (per UI-SPEC Component 2)
+                // Modifier key selector (per UI-SPEC Component 2).
+                // Segmented, not .menu: a .menu Picker's popup cannot open while
+                // the parent NSMenu's tracking loop owns events (same root cause
+                // as the FinderSort fix in d70466d).
                 HStack {
                     Text(String(localized: "label.temporary_unlock"))
                         .font(.caption)
@@ -142,11 +145,12 @@ final class DockAnchorModule: FeatureModule, @unchecked Sendable {
                         set: { self.selectedModifierKey = $0 }
                     )) {
                         ForEach(ModifierKeyOption.allCases, id: \.self) { option in
-                            Text(option.displayName).tag(option)
+                            Text(option.symbol).tag(option)
                         }
                     }
-                    .pickerStyle(.menu)
+                    .pickerStyle(.segmented)
                     .labelsHidden()
+                    .fixedSize()
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 4)
