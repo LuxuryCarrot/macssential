@@ -47,7 +47,7 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 <p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock 고정 demo"></p>
 </details>
 <details><summary><b>Dock 자동 숨기기</b></summary>
-<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dock 자동 숨기기 demo"></p>
+<p align="center"><img src="docs/assets/demo-dock-autohide.gif" width="600" alt="Dock 자동 숨기기 demo"></p>
 </details>
 <details><summary><b>최근 앱 숨기기</b></summary>
 <p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="최근 앱 숨기기 demo"></p>

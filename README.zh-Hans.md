@@ -44,7 +44,7 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 <p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="程序坞锚定 demo"></p>
 </details>
 <details><summary><b>程序坞自动隐藏</b></summary>
-<p align="center"><img src="docs/assets/demo.gif" width="600" alt="程序坞自动隐藏 demo"></p>
+<p align="center"><img src="docs/assets/demo-dock-autohide.gif" width="600" alt="程序坞自动隐藏 demo"></p>
 </details>
 <details><summary><b>隐藏最近使用的 App</b></summary>
 <p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="隐藏最近使用的 App demo"></p>

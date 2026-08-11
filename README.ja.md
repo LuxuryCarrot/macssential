@@ -48,7 +48,7 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 <p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock固定 demo"></p>
 </details>
 <details><summary><b>Dockの自動非表示</b></summary>
-<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dockの自動非表示 demo"></p>
+<p align="center"><img src="docs/assets/demo-dock-autohide.gif" width="600" alt="Dockの自動非表示 demo"></p>
 </details>
 <details><summary><b>最近のアプリを非表示</b></summary>
 <p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="最近のアプリを非表示 demo"></p>

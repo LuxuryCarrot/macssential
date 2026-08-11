@@ -49,7 +49,7 @@ from the menu bar, with no digging through System Settings.
 <p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock Anchor demo"></p>
 </details>
 <details><summary><b>Dock Auto-Hide</b></summary>
-<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dock Auto-Hide demo"></p>
+<p align="center"><img src="docs/assets/demo-dock-autohide.gif" width="600" alt="Dock Auto-Hide demo"></p>
 </details>
 <details><summary><b>Hide Recent Apps</b></summary>
 <p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="Hide Recent Apps demo"></p>
