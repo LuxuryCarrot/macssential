@@ -141,6 +141,8 @@ Dock 고정, 스크롤 방향, 스크린샷 자동 복사 모듈은 손쉬운 �
 [Discussions](https://github.com/LuxuryCarrot/macssential/discussions)에서
 나눌 수 있습니다.
 
+다음 기능 투표에 참여해 로드맵에 의견을 보태 주세요 → [기능 투표 스레드](https://github.com/LuxuryCarrot/macssential/discussions/1)
+
 ## 후원
 
 macssential은 무료 오픈소스 프로젝트입니다. 이 앱이 Mac 사용을 더

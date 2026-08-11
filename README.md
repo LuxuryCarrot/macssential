@@ -141,6 +141,8 @@ Found a bug or have a feature idea? Open a
 on the Issues page. For questions and open-ended ideas, join the conversation
 in [Discussions](https://github.com/LuxuryCarrot/macssential/discussions).
 
+Want to influence the roadmap? Vote on the next feature in the [Feature Voting thread](https://github.com/LuxuryCarrot/macssential/discussions/1).
+
 ## Support
 
 macssential is free and open source. If it makes your Mac life easier,

@@ -142,6 +142,8 @@ Dock固定、スクロール方向、スクリーンショット自動コピー�
 [Discussions](https://github.com/LuxuryCarrot/macssential/discussions)
 をご利用ください。
 
+次の機能への投票でロードマップに参加できます → [機能投票スレッド](https://github.com/LuxuryCarrot/macssential/discussions/1)
+
 ## サポート
 
 macssential は無料のオープンソースプロジェクトです。このアプリが Mac

@@ -133,6 +133,8 @@ App 内提示新版本——无需手动下载。
 提交错误报告或功能请求。如有疑问或想交流想法，欢迎前往
 [Discussions](https://github.com/LuxuryCarrot/macssential/discussions)。
 
+参与下一个功能的投票，影响开发路线图 → [功能投票帖](https://github.com/LuxuryCarrot/macssential/discussions/1)
+
 ## 支持
 
 macssential 是免费的开源项目。如果它让你的 Mac 使用体验更加轻松，
