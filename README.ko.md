@@ -63,6 +63,7 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 </details>
 <details><summary><b>스크린샷 자동 복사</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="스크린샷 자동 복사 demo"></p>
+<p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>한글 파일명 정규화</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="한글 파일명 정규화 demo"></p>
@@ -142,6 +143,8 @@ Dock 고정, 스크롤 방향, 스크린샷 자동 복사 모듈은 손쉬운 �
 macssential은 무료 오픈소스 프로젝트입니다. 이 앱이 Mac 사용을 더
 편하게 해 주었다면, [Ko-fi](https://ko-fi.com/luxurycarrot)에서 커피
 한 잔으로 개발을 응원해 주세요. ☕
+
+후원금은 macssential이 보안 경고 없이 실행되도록 하는 코드 서명·공증, 즉 Apple Developer 멤버십 유지에 직접 사용됩니다.
 
 <p align="center">
   <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>

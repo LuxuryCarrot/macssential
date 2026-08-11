@@ -60,6 +60,7 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 </details>
 <details><summary><b>截图自动拷贝</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="截图自动拷贝 demo"></p>
+<p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>文件名规范化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="文件名规范化 demo"></p>
@@ -134,6 +135,8 @@ App 内提示新版本——无需手动下载。
 macssential 是免费的开源项目。如果它让你的 Mac 使用体验更加轻松，
 欢迎在 [Ko-fi](https://ko-fi.com/luxurycarrot) 上请开发者喝杯咖啡，
 支持项目开发。☕
+
+您的支持将直接用于维持 Apple Developer 会员资格——正是代码签名与公证让 macssential 无需安全警告即可运行。
 
 <p align="center">
   <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>

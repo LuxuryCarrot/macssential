@@ -65,6 +65,7 @@ from the menu bar, with no digging through System Settings.
 </details>
 <details><summary><b>Screenshot Auto-Copy</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="Screenshot Auto-Copy demo"></p>
+<p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>Filename Normalizer</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="Filename Normalizer demo"></p>
@@ -142,6 +143,8 @@ in [Discussions](https://github.com/LuxuryCarrot/macssential/discussions).
 macssential is free and open source. If it makes your Mac life easier,
 you can support development with a coffee on
 [Ko-fi](https://ko-fi.com/luxurycarrot). ☕
+
+Tips go directly toward keeping the Apple Developer membership active — the code signing and notarization that let macssential run without security warnings.
 
 <p align="center">
   <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>

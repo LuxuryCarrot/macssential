@@ -64,6 +64,7 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 </details>
 <details><summary><b>スクリーンショット自動コピー</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="スクリーンショット自動コピー demo"></p>
+<p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>ファイル名正規化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="ファイル名正規化 demo"></p>
@@ -143,6 +144,8 @@ Dock固定、スクロール方向、スクリーンショット自動コピー�
 macssential は無料のオープンソースプロジェクトです。このアプリが Mac
 ライフを快適にしてくれたら、[Ko-fi](https://ko-fi.com/luxurycarrot)
 でコーヒー一杯分の支援をいただけると嬉しいです。☕
+
+いただいたサポートは、macssentialがセキュリティ警告なしで動作するためのコード署名・公証、つまりApple Developerメンバーシップの維持に直接使われます。
 
 <p align="center">
   <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>
