@@ -22,7 +22,7 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 独立したモジュールになっており、システム設定を探し回ることなく、メニューバーから
 そのままオン/オフを切り替えられます。
 
-<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="macssential demo"></p>
 
 > macssentialは[MITライセンス](LICENSE)のオープンソースです。
 

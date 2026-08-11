@@ -21,7 +21,7 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 文件名规范化等等。每个功能都是独立模块，无需在系统设置里翻找，直接在菜单栏中
 即可开关。
 
-<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="macssential demo"></p>
 
 > macssential 基于 [MIT 许可证](LICENSE)开源。
 

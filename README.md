@@ -22,7 +22,7 @@ monitors, keyboard repeat speed, scroll direction, filename normalization, and
 more. Each feature is an independent module you can switch on or off right
 from the menu bar, with no digging through System Settings.
 
-<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="macssential demo"></p>
 
 > macssential is open source under the [MIT License](LICENSE).
 

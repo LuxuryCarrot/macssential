@@ -21,7 +21,7 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 스크롤 방향, 파일명 정규화 등. 각 기능은 독립적인 모듈이라 시스템 설정을 뒤질
 필요 없이 메뉴바에서 바로 켜고 끌 수 있습니다.
 
-<!-- TODO: demo GIF — record with Cmd+Shift+5, save to docs/assets/demo.gif, then replace this comment with: <p align="center"><img src="docs/assets/demo.gif" width="600"></p> -->
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="macssential demo"></p>
 
 > macssential은 [MIT 라이선스](LICENSE)로 공개된 오픈소스입니다.
 
