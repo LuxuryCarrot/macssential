@@ -83,6 +83,9 @@ and About. The Modules tab enables or disables modules app-wide.
 **Customizing the panel.** Use the Panel tab to choose exactly which modules
 appear in the menu bar panel, so it only shows what you actually use.
 
+
+<p align="center"><img src="docs/assets/demo-panel-customize.gif" width="600" alt="Panel customization demo"></p>
+
 ## Install
 
 ### Homebrew

@@ -81,6 +81,9 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 **패널 구성하기.** 패널 탭에서는 메뉴바 패널에 표시할 모듈을 직접 골라, 실제로
 사용하는 기능만 보이게 만들 수 있습니다.
 
+
+<p align="center"><img src="docs/assets/demo-panel-customize.gif" width="600" alt="Panel customization demo"></p>
+
 ## 설치
 
 ### Homebrew

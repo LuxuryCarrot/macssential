@@ -77,6 +77,9 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 **自定义面板。** 在"面板"标签页中可以自由选择哪些模块显示在菜单栏面板里，
 只保留你真正常用的功能。
 
+
+<p align="center"><img src="docs/assets/demo-panel-customize.gif" width="600" alt="Panel customization demo"></p>
+
 ## 安装
 
 ### Homebrew

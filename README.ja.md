@@ -82,6 +82,9 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 **パネルのカスタマイズ。** パネルタブでは、メニューバーパネルに表示する
 モジュールを自由に選べるので、実際に使う機能だけを並べておけます。
 
+
+<p align="center"><img src="docs/assets/demo-panel-customize.gif" width="600" alt="Panel customization demo"></p>
+
 ## インストール
 
 ### Homebrew
