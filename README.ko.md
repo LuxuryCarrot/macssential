@@ -40,6 +40,34 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 - **한글 파일명 정규화** — 자소가 분리된(NFD) 파일명을 NFC로 자동 변환해
   한글·일본어 등에서 깨져 보이는 파일명을 바로잡습니다.
 
+
+## 기능 데모
+
+<details><summary><b>Dock 고정</b></summary>
+<p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock 고정 demo"></p>
+</details>
+<details><summary><b>Dock 자동 숨기기</b></summary>
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dock 자동 숨기기 demo"></p>
+</details>
+<details><summary><b>최근 앱 숨기기</b></summary>
+<p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="최근 앱 숨기기 demo"></p>
+</details>
+<details><summary><b>숨김 파일</b></summary>
+<p align="center"><img src="docs/assets/demo-hidden-files.gif" width="600" alt="숨김 파일 demo"></p>
+</details>
+<details><summary><b>키 반복 속도</b></summary>
+<p align="center"><img src="docs/assets/demo-key-repeat.gif" width="600" alt="키 반복 속도 demo"></p>
+</details>
+<details><summary><b>스크롤 방향</b></summary>
+<p align="center"><img src="docs/assets/demo-scroll-direction.gif" width="600" alt="스크롤 방향 demo"></p>
+</details>
+<details><summary><b>스크린샷 자동 복사</b></summary>
+<p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="스크린샷 자동 복사 demo"></p>
+</details>
+<details><summary><b>한글 파일명 정규화</b></summary>
+<p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="한글 파일명 정규화 demo"></p>
+</details>
+
 ## 사용 방법
 
 **메뉴바 패널.** 메뉴바의 ✱ 아이콘을 클릭하면 드롭다운 패널이 열립니다. 클릭

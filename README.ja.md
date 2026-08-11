@@ -41,6 +41,34 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 - **ファイル名正規化** — 濁点・半濁点が分解されたファイル名（NFD）をNFCに
   自動変換し、日本語や韓国語などで文字化けして見えるファイル名を修正します。
 
+
+## 機能デモ
+
+<details><summary><b>Dock固定</b></summary>
+<p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock固定 demo"></p>
+</details>
+<details><summary><b>Dockの自動非表示</b></summary>
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dockの自動非表示 demo"></p>
+</details>
+<details><summary><b>最近のアプリを非表示</b></summary>
+<p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="最近のアプリを非表示 demo"></p>
+</details>
+<details><summary><b>隠しファイル</b></summary>
+<p align="center"><img src="docs/assets/demo-hidden-files.gif" width="600" alt="隠しファイル demo"></p>
+</details>
+<details><summary><b>キーリピート</b></summary>
+<p align="center"><img src="docs/assets/demo-key-repeat.gif" width="600" alt="キーリピート demo"></p>
+</details>
+<details><summary><b>スクロール方向</b></summary>
+<p align="center"><img src="docs/assets/demo-scroll-direction.gif" width="600" alt="スクロール方向 demo"></p>
+</details>
+<details><summary><b>スクリーンショット自動コピー</b></summary>
+<p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="スクリーンショット自動コピー demo"></p>
+</details>
+<details><summary><b>ファイル名正規化</b></summary>
+<p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="ファイル名正規化 demo"></p>
+</details>
+
 ## 使い方
 
 **メニューバーパネル。** メニューバーの✱アイコンをクリックするとドロップダウン

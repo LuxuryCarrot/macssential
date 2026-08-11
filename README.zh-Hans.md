@@ -37,6 +37,34 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 - **文件名规范化** — 自动将分解形式（NFD）的文件名重命名为 NFC，修复韩文、
   日文等语言中看起来乱码的文件名。
 
+
+## 功能演示
+
+<details><summary><b>程序坞锚定</b></summary>
+<p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="程序坞锚定 demo"></p>
+</details>
+<details><summary><b>程序坞自动隐藏</b></summary>
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="程序坞自动隐藏 demo"></p>
+</details>
+<details><summary><b>隐藏最近使用的 App</b></summary>
+<p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="隐藏最近使用的 App demo"></p>
+</details>
+<details><summary><b>隐藏文件</b></summary>
+<p align="center"><img src="docs/assets/demo-hidden-files.gif" width="600" alt="隐藏文件 demo"></p>
+</details>
+<details><summary><b>按键重复</b></summary>
+<p align="center"><img src="docs/assets/demo-key-repeat.gif" width="600" alt="按键重复 demo"></p>
+</details>
+<details><summary><b>滚动方向</b></summary>
+<p align="center"><img src="docs/assets/demo-scroll-direction.gif" width="600" alt="滚动方向 demo"></p>
+</details>
+<details><summary><b>截图自动拷贝</b></summary>
+<p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="截图自动拷贝 demo"></p>
+</details>
+<details><summary><b>文件名规范化</b></summary>
+<p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="文件名规范化 demo"></p>
+</details>
+
 ## 使用方法
 
 **菜单栏面板。** 点击菜单栏中的 ✱ 图标即可打开下拉面板。一键开关各项功能，

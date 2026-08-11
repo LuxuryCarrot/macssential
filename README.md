@@ -42,6 +42,34 @@ from the menu bar, with no digging through System Settings.
   to NFC, fixing garbled-looking names for Korean, Japanese, and other
   languages.
 
+
+## Feature Demos
+
+<details><summary><b>Dock Anchor</b></summary>
+<p align="center"><img src="docs/assets/demo-dock-anchor.gif" width="600" alt="Dock Anchor demo"></p>
+</details>
+<details><summary><b>Dock Auto-Hide</b></summary>
+<p align="center"><img src="docs/assets/demo.gif" width="600" alt="Dock Auto-Hide demo"></p>
+</details>
+<details><summary><b>Hide Recent Apps</b></summary>
+<p align="center"><img src="docs/assets/demo-hide-recent-apps.gif" width="600" alt="Hide Recent Apps demo"></p>
+</details>
+<details><summary><b>Hidden Files</b></summary>
+<p align="center"><img src="docs/assets/demo-hidden-files.gif" width="600" alt="Hidden Files demo"></p>
+</details>
+<details><summary><b>Key Repeat</b></summary>
+<p align="center"><img src="docs/assets/demo-key-repeat.gif" width="600" alt="Key Repeat demo"></p>
+</details>
+<details><summary><b>Scroll Direction</b></summary>
+<p align="center"><img src="docs/assets/demo-scroll-direction.gif" width="600" alt="Scroll Direction demo"></p>
+</details>
+<details><summary><b>Screenshot Auto-Copy</b></summary>
+<p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="Screenshot Auto-Copy demo"></p>
+</details>
+<details><summary><b>Filename Normalizer</b></summary>
+<p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="Filename Normalizer demo"></p>
+</details>
+
 ## Using the App
 
 **Menu bar panel.** Click the ✱ icon in the menu bar to open the dropdown
