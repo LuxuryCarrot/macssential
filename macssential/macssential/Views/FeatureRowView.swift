@@ -4,6 +4,11 @@ struct FeatureRowView: View {
     let module: any FeatureModule
     var permissionManager: AccessibilityPermissionManager? = nil
     var registry: ModuleRegistry? = nil
+    /// When true (NSMenu panel context), use PanelSwitchToggleStyle with
+    /// explicit colors — the native `.switch` desaturates inside NSMenu-hosted
+    /// views because the menu window is never key. Default false keeps the
+    /// native style for real-window contexts (Settings Modules tab).
+    var usesPanelToggleStyle: Bool = false
 
     private var isEnabledBinding: Binding<Bool> {
         Binding(
@@ -75,9 +80,14 @@ struct FeatureRowView: View {
                     }
                 } else {
                     // State 3: Available + has permission -- normal toggle
-                    Toggle("", isOn: isEnabledBinding)
-                        .toggleStyle(.switch)
-                        .controlSize(.small)
+                    if usesPanelToggleStyle {
+                        Toggle("", isOn: isEnabledBinding)
+                            .toggleStyle(PanelSwitchToggleStyle())
+                    } else {
+                        Toggle("", isOn: isEnabledBinding)
+                            .toggleStyle(.switch)
+                            .controlSize(.small)
+                    }
                 }
             }
             .padding(.horizontal, 16)

@@ -78,8 +78,7 @@ struct FinderSortSettingsView: View {
                 Text(String(localized: "module.finder_sort.enforce"))
                     .font(.caption)
             }
-            .toggleStyle(.switch)
-            .controlSize(.mini)
+            .toggleStyle(PanelSwitchToggleStyle(size: .mini))
 
             Text(String(localized: "module.finder_sort.enforce_hint"))
                 .font(.caption)

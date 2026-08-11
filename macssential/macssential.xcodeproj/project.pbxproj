@@ -62,6 +62,7 @@
 		KREP17030001A9B0C1D2E3F401 /* KeyRepeatSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = KREP17030001A9B0C1D2E3F402 /* KeyRepeatSettingsView.swift */; };
 		FSRT19010001A9B0C1D2E3F401 /* FinderSortModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FSRT19010001A9B0C1D2E3F402 /* FinderSortModule.swift */; };
 		FSRT19020001A9B0C1D2E3F401 /* FinderSortSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */; };
+		PSTG20010001A9B0C1D2E3F401 /* PanelSwitchToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		KREP17030001A9B0C1D2E3F402 /* KeyRepeatSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRepeatSettingsView.swift; sourceTree = "<group>"; };
 		FSRT19010001A9B0C1D2E3F402 /* FinderSortModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSortModule.swift; sourceTree = "<group>"; };
 		FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSortSettingsView.swift; sourceTree = "<group>"; };
+		PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelSwitchToggleStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXVariantGroup section */
@@ -222,6 +224,7 @@
 				KFN16030001A9B0C1D2E3F402 /* KoreanFilenameNormalizerSettingsView.swift */,
 				KREP17030001A9B0C1D2E3F402 /* KeyRepeatSettingsView.swift */,
 				FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */,
+				PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				KREP17030001A9B0C1D2E3F401 /* KeyRepeatSettingsView.swift in Sources */,
 				FSRT19010001A9B0C1D2E3F401 /* FinderSortModule.swift in Sources */,
 				FSRT19020001A9B0C1D2E3F401 /* FinderSortSettingsView.swift in Sources */,
+				PSTG20010001A9B0C1D2E3F401 /* PanelSwitchToggleStyle.swift in Sources */,
 				PANLCFG0001A9B0C1D2E3F401 /* PanelConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

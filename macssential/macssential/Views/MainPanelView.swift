@@ -15,7 +15,8 @@ struct MainPanelView: View {
                     FeatureRowView(
                         module: module,
                         permissionManager: module.requiresAccessibilityPermission ? permissionManager : nil,
-                        registry: registry
+                        registry: registry,
+                        usesPanelToggleStyle: true
                     )
                     if let settingsView = module.settingsView, module.isEnabled {
                         settingsView
