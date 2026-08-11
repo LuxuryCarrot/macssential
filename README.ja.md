@@ -67,6 +67,7 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 </details>
 <details><summary><b>スクリーンショット保存先のカスタマイズ</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
+<p>パネルの「Also save to folder」→「Choose…」から任意のフォルダを指定できます。この機能はmacssentialの実行中のみ動作し、macOSのシステム設定は一切変更しません — アプリを終了・削除すればすぐに標準の動作（デスクトップ保存）に戻ります。</p>
 </details>
 <details><summary><b>ファイル名正規化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="ファイル名正規化 demo"></p>

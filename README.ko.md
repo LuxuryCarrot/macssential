@@ -66,6 +66,7 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 </details>
 <details><summary><b>스크린샷 저장 경로 지정</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
+<p>패널의 “Also save to folder” → Choose…에서 원하는 폴더를 지정할 수 있습니다. 이 기능은 macssential이 실행 중일 때만 동작하며 macOS 시스템 설정을 전혀 수정하지 않습니다 — 앱을 종료하거나 삭제하면 스크린샷은 즉시 기본 동작(바탕화면 저장)으로 돌아갑니다.</p>
 </details>
 <details><summary><b>한글 파일명 정규화</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="한글 파일명 정규화 demo"></p>

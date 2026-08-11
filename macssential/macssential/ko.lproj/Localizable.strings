@@ -41,6 +41,8 @@
 "settings.about.credits" = "by Dongkeun Lee";
 "settings.about.feedback" = "피드백 보내기";
 "settings.about.feedback.caption" = "GitHub에서 버그를 신고하거나 기능을 제안해 주세요.";
+"settings.about.kofi" = "Ko-fi로 후원하기";
+"settings.about.kofi.caption" = "후원금은 Apple Developer 멤버십(코드 서명·공증) 유지에 사용됩니다.";
 
 /* Panel */
 "panel.language" = "언어";

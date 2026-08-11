@@ -68,6 +68,7 @@ from the menu bar, with no digging through System Settings.
 </details>
 <details><summary><b>Customize Screenshot Save Path</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
+<p>Pick any folder right from the panel (“Also save to folder” → Choose…). This works only while macssential is running and never modifies macOS system settings — quit or remove the app and screenshots instantly return to the stock Desktop behavior.</p>
 </details>
 <details><summary><b>Filename Normalizer</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="Filename Normalizer demo"></p>

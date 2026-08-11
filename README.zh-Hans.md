@@ -63,6 +63,7 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 </details>
 <details><summary><b>自定义截图保存位置</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
+<p>可在面板的“Also save to folder”→“Choose…”中指定任意文件夹。此功能仅在 macssential 运行时生效，且不会修改任何 macOS 系统设置 — 退出或删除应用后，截图会立即恢复为默认行为（保存到桌面）。</p>
 </details>
 <details><summary><b>文件名规范化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="文件名规范化 demo"></p>

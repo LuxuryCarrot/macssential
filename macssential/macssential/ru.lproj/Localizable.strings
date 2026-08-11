@@ -41,6 +41,8 @@
 "settings.about.credits" = "by Dongkeun Lee";
 "settings.about.feedback" = "Отправить отзыв";
 "settings.about.feedback.caption" = "Сообщайте об ошибках и предлагайте функции на GitHub.";
+"settings.about.kofi" = "Поддержать на Ko-fi";
+"settings.about.kofi.caption" = "Пожертвования помогают поддерживать членство Apple Developer (подпись кода и нотаризация).";
 
 /* Panel */
 "panel.language" = "Язык";

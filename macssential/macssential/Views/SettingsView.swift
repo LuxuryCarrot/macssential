@@ -237,6 +237,22 @@ struct SettingsView: View {
                     .foregroundStyle(.secondary)
             }
 
+            Section {
+                Button(action: {
+                    if let url = URL(string: "https://ko-fi.com/luxurycarrot") {
+                        NSWorkspace.shared.open(url)
+                    }
+                }) {
+                    Label(String(localized: "settings.about.kofi"), systemImage: "cup.and.saucer.fill")
+                }
+                .buttonStyle(.plain)
+                .foregroundColor(.accentColor)
+            } footer: {
+                Text(String(localized: "settings.about.kofi.caption"))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             Section(header: Text(String(localized: "settings.about.licenses.title"))) {
                 ForEach(AboutInfo.licenses) { license in
                     DisclosureGroup {
