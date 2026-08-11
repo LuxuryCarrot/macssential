@@ -60,6 +60,8 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 </details>
 <details><summary><b>截图自动拷贝</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="截图自动拷贝 demo"></p>
+</details>
+<details><summary><b>自定义截图保存位置</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>文件名规范化</b></summary>

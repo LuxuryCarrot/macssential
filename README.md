@@ -65,6 +65,8 @@ from the menu bar, with no digging through System Settings.
 </details>
 <details><summary><b>Screenshot Auto-Copy</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="Screenshot Auto-Copy demo"></p>
+</details>
+<details><summary><b>Customize Screenshot Save Path</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>Filename Normalizer</b></summary>

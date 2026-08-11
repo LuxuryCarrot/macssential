@@ -64,6 +64,8 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 </details>
 <details><summary><b>スクリーンショット自動コピー</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="スクリーンショット自動コピー demo"></p>
+</details>
+<details><summary><b>スクリーンショット保存先のカスタマイズ</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>ファイル名正規化</b></summary>

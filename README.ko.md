@@ -63,6 +63,8 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 </details>
 <details><summary><b>스크린샷 자동 복사</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-auto-copy.gif" width="600" alt="스크린샷 자동 복사 demo"></p>
+</details>
+<details><summary><b>스크린샷 저장 경로 지정</b></summary>
 <p align="center"><img src="docs/assets/demo-screenshot-save-path.gif" width="600" alt="Screenshot save path demo"></p>
 </details>
 <details><summary><b>한글 파일명 정규화</b></summary>
