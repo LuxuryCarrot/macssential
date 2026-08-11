@@ -143,6 +143,11 @@ macssential은 무료 오픈소스 프로젝트입니다. 이 앱이 Mac 사용�
 편하게 해 주었다면, [Ko-fi](https://ko-fi.com/luxurycarrot)에서 커피
 한 잔으로 개발을 응원해 주세요. ☕
 
+<p align="center">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>
+</p>
+
+
 ---
 
 <sub>macssential은 독립적인 오픈소스 프로젝트로, Apple Inc.와 제휴하거나 Apple Inc.의 보증 또는 후원을 받지 않습니다. Mac 및 macOS는 Apple Inc.의 상표입니다.</sub>

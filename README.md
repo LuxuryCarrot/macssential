@@ -143,6 +143,11 @@ macssential is free and open source. If it makes your Mac life easier,
 you can support development with a coffee on
 [Ko-fi](https://ko-fi.com/luxurycarrot). ☕
 
+<p align="center">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>
+</p>
+
+
 ---
 
 <sub>macssential is an independent open-source project and is not affiliated with, endorsed by, or sponsored by Apple Inc. Mac and macOS are trademarks of Apple Inc.</sub>

@@ -135,6 +135,11 @@ macssential 是免费的开源项目。如果它让你的 Mac 使用体验更加
 欢迎在 [Ko-fi](https://ko-fi.com/luxurycarrot) 上请开发者喝杯咖啡，
 支持项目开发。☕
 
+<p align="center">
+  <a href="https://ko-fi.com/luxurycarrot"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" height="40"></a>
+</p>
+
+
 ---
 
 <sub>macssential 是一个独立的开源项目，与 Apple Inc. 无任何隶属、认可或赞助关系。Mac 和 macOS 是 Apple Inc. 的商标。</sub>
