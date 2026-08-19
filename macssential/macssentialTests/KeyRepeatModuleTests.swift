@@ -175,22 +175,22 @@ final class KeyRepeatModuleTests: XCTestCase {
         XCTAssertEqual(module.initialKeyRepeat, 5, "initialKeyRepeat must clamp to min 5")
 
         module.keyRepeat = 100
-        XCTAssertEqual(module.keyRepeat, 5, "keyRepeat must clamp to max 5")
+        XCTAssertEqual(module.keyRepeat, 10, "keyRepeat must clamp to max 10")
         module.keyRepeat = 0
         XCTAssertEqual(module.keyRepeat, 1, "keyRepeat must clamp to min 1")
     }
 
     func testOutOfRangePersistedValuesClampOnLoad() {
-        // Old-valid values (25/6 — the pre-truncation macOS defaults) persisted by a
-        // previous app version must clamp into the new ranges on next launch.
+        // Out-of-range values persisted by a previous app version must clamp into
+        // the current ranges (5...14 / 1...10) on next launch.
         defaults.set(25, forKey: "com.macssential.module.key-repeat.initialKeyRepeat")
-        defaults.set(6, forKey: "com.macssential.module.key-repeat.keyRepeat")
+        defaults.set(100, forKey: "com.macssential.module.key-repeat.keyRepeat")
 
         let module = makeModule()
         XCTAssertEqual(module.initialKeyRepeat, 14,
             "Persisted 25 (out of 5...14) must clamp to 14 on load")
-        XCTAssertEqual(module.keyRepeat, 5,
-            "Persisted 6 (out of 1...5) must clamp to 5 on load")
+        XCTAssertEqual(module.keyRepeat, 10,
+            "Persisted 100 (out of 1...10) must clamp to 10 on load")
     }
 
     // MARK: - Test 6: restoreMacOSDefaults()
@@ -210,8 +210,8 @@ final class KeyRepeatModuleTests: XCTestCase {
 
         XCTAssertEqual(module.initialKeyRepeat, 14,
             "Restore must land the slider on the range maximum (14) — true default 25 is outside the selectable range")
-        XCTAssertEqual(module.keyRepeat, 5,
-            "Restore must land the slider on the range maximum (5) — true default 6 is outside the selectable range")
+        XCTAssertEqual(module.keyRepeat, 6,
+            "Restore must land the slider on the true macOS default (6), which is inside the 1...10 range")
         XCTAssertEqual(spy.restoreCalls, restoreCallsBeforeRestore + 1,
             "Restore must delete the global keys via applier.restoreSystemDefaults()")
         XCTAssertEqual(spy.applyCalls.count, applyCallsBeforeRestore,

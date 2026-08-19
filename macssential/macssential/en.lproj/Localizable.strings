@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "Copy screenshots to clipboard instead of saving files";
 "module.screenshot_auto_copy.also_save_to_folder" = "Also save to folder";
 "module.screenshot_auto_copy.choose_folder" = "Choose...";
+"module.screenshot_auto_copy.secure_input_warning" = "Screenshot interception is paused: %@ is holding Secure Input. It resumes automatically once that app releases it (e.g., a password prompt closes).";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "another app";
+"module.screenshot_auto_copy.tap_failed" = "Could not start keyboard interception. Try toggling the feature off and on, or relaunch macssential.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Filename Normalizer";

@@ -38,15 +38,39 @@ final class AccessibilityPermissionManager {
         pollTimer != nil
     }
 
+    /// Injectable trust check for tests. Defaults to the real AX API.
+    var trustCheck: () -> Bool = { AXIsProcessTrusted() }
+
     /// Check current Accessibility permission status.
     /// Updates `isGranted` and persists grant state for re-auth detection.
+    ///
+    /// Fires the same transition callbacks as the poll loop. Previously this
+    /// method overwrote `isGranted` WITHOUT firing them — if a revoked→granted
+    /// transition was first observed here (e.g., panel open) instead of by the
+    /// poll, `onPermissionRestored` never fired, `activateEnabledModules()` never
+    /// ran, and every tap module stayed enabled-but-dead with permission granted.
     @discardableResult
     func checkPermission() -> Bool {
-        isGranted = AXIsProcessTrusted()
-        if isGranted {
-            UserDefaults.standard.set(true, forKey: Self.wasGrantedKey)
-        }
+        applyPermissionState(trustCheck())
         return isGranted
+    }
+
+    /// Central transition handler — ALL `isGranted` updates flow through here so
+    /// grant/revoke transitions fire their callbacks exactly once regardless of
+    /// whether the poll or an ad-hoc checkPermission() observes the change first.
+    private func applyPermissionState(_ granted: Bool) {
+        let wasGranted = isGranted
+        isGranted = granted
+        if granted {
+            UserDefaults.standard.set(true, forKey: Self.wasGrantedKey)
+            if !wasGranted {
+                // Transition: revoked → granted. Reactivate modules.
+                onPermissionRestored?()
+            }
+        } else if wasGranted {
+            // Transition: granted → revoked. Tear down event taps.
+            onPermissionRevoked?()
+        }
     }
 
     /// Prompt the system Accessibility permission dialog for the CURRENT binary.
@@ -70,21 +94,9 @@ final class AccessibilityPermissionManager {
     func startPolling(interval: TimeInterval = 1.0) {
         stopPolling()
         pollTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] _ in
-            let granted = AXIsProcessTrusted()
             Task { @MainActor [weak self] in
                 guard let self else { return }
-                let wasGranted = self.isGranted
-                self.isGranted = granted
-                if granted {
-                    UserDefaults.standard.set(true, forKey: Self.wasGrantedKey)
-                    if !wasGranted {
-                        // Transition: revoked → granted. Reactivate modules.
-                        self.onPermissionRestored?()
-                    }
-                } else if wasGranted {
-                    // Transition: granted → revoked. Tear down event taps.
-                    self.onPermissionRevoked?()
-                }
+                self.applyPermissionState(self.trustCheck())
             }
         }
     }

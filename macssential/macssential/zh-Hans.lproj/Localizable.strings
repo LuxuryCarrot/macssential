@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "将截图拷贝到剪贴板而非存储为文件";
 "module.screenshot_auto_copy.also_save_to_folder" = "同时存储到文件夹";
 "module.screenshot_auto_copy.choose_folder" = "选择…";
+"module.screenshot_auto_copy.secure_input_warning" = "截图拦截已暂停：%@ 正在占用安全输入 (Secure Input)。该应用释放后（例如密码输入框关闭）将自动恢复。";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "其他应用";
+"module.screenshot_auto_copy.tap_failed" = "无法启动键盘拦截。请尝试关闭再开启该功能，或重新启动 macssential。";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "文件名规范化";

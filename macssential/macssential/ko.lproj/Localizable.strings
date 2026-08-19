@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "스크린샷을 파일로 저장하는 대신 클립보드에 직접 복사";
 "module.screenshot_auto_copy.also_save_to_folder" = "폴더에도 저장";
 "module.screenshot_auto_copy.choose_folder" = "선택...";
+"module.screenshot_auto_copy.secure_input_warning" = "스크린샷 가로채기 일시 중지됨: %@이(가) 보안 입력(Secure Input)을 사용 중입니다. 해당 앱이 보안 입력을 해제하면(예: 암호 입력창 닫힘) 자동으로 재개됩니다.";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "다른 앱";
+"module.screenshot_auto_copy.tap_failed" = "키보드 가로채기를 시작할 수 없습니다. 기능을 껐다 켜거나 macssential을 재실행해 보세요.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "한글 파일명 정규화";

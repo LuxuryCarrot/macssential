@@ -6,6 +6,13 @@ struct ScreenshotAutoCopySettingsView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
+            if let warning = module.secureInputWarning {
+                warningRow(warning)
+            }
+            if module.tapCreationFailed {
+                warningRow(String(localized: "module.screenshot_auto_copy.tap_failed"))
+            }
+
             Toggle(String(localized: "module.screenshot_auto_copy.also_save_to_folder"),
                    isOn: $module.alsoSaveToFolder)
                 .toggleStyle(.checkbox)
@@ -30,6 +37,18 @@ struct ScreenshotAutoCopySettingsView: View {
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 8)
+    }
+
+    private func warningRow(_ message: String) -> some View {
+        HStack(alignment: .top, spacing: 4) {
+            Image(systemName: "exclamationmark.triangle.fill")
+                .font(.system(size: 10))
+                .foregroundColor(.orange)
+            Text(message)
+                .font(.caption)
+                .foregroundColor(.orange)
+                .fixedSize(horizontal: false, vertical: true)
+        }
     }
 
     private func chooseSaveFolder() {

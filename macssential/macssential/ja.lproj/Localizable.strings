@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "スクリーンショットをファイル保存せずクリップボードに直接コピー";
 "module.screenshot_auto_copy.also_save_to_folder" = "フォルダにも保存";
 "module.screenshot_auto_copy.choose_folder" = "選択...";
+"module.screenshot_auto_copy.secure_input_warning" = "スクリーンショットの取得を一時停止中: %@ がセキュア入力を使用しています。そのアプリがセキュア入力を解除すると（例: パスワード入力の終了）自動的に再開されます。";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "別のアプリ";
+"module.screenshot_auto_copy.tap_failed" = "キーボードの取得を開始できませんでした。機能をオフ/オンするか、macssential を再起動してください。";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "ファイル名正規化";

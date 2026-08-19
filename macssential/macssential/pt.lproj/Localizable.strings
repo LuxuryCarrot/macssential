@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "Copiar capturas para a área de transferência em vez de salvar";
 "module.screenshot_auto_copy.also_save_to_folder" = "Salvar também em pasta";
 "module.screenshot_auto_copy.choose_folder" = "Escolher…";
+"module.screenshot_auto_copy.secure_input_warning" = "Interceptação de capturas pausada: %@ está mantendo a entrada segura (Secure Input). Ela será retomada automaticamente quando o app a liberar (ex.: ao fechar um pedido de senha).";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "outro app";
+"module.screenshot_auto_copy.tap_failed" = "Não foi possível iniciar a interceptação do teclado. Desative e ative o recurso ou reinicie o macssential.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Normalizador de nomes de arquivo";

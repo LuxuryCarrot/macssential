@@ -39,6 +39,52 @@ final class AccessibilityPermissionTests: XCTestCase {
         XCTAssertFalse(manager.isPolling, "Should not be polling after stopPolling()")
     }
 
+    // MARK: - Transition callbacks from checkPermission() (screenshot-intercept-drops)
+    // Regression: checkPermission() used to overwrite isGranted WITHOUT firing the
+    // transition callbacks. A revoked→granted transition first observed by a panel-open
+    // checkPermission() then never fired onPermissionRestored, so modules were never
+    // reactivated — every tap module stayed enabled-but-dead with permission granted.
+
+    func testCheckPermissionFiresRestoredCallbackOnGrantTransition() {
+        let manager = AccessibilityPermissionManager()
+        manager.trustCheck = { true }
+        manager.isGranted = false
+
+        var restoredCount = 0
+        var revokedCount = 0
+        manager.onPermissionRestored = { restoredCount += 1 }
+        manager.onPermissionRevoked = { revokedCount += 1 }
+
+        XCTAssertTrue(manager.checkPermission())
+        XCTAssertEqual(restoredCount, 1,
+            "revoked→granted observed by checkPermission() must fire onPermissionRestored")
+        XCTAssertEqual(revokedCount, 0)
+
+        // No transition on the second check — must not re-fire.
+        XCTAssertTrue(manager.checkPermission())
+        XCTAssertEqual(restoredCount, 1, "steady granted state must not re-fire the callback")
+    }
+
+    func testCheckPermissionFiresRevokedCallbackOnRevokeTransition() {
+        let manager = AccessibilityPermissionManager()
+        manager.trustCheck = { false }
+        manager.isGranted = true
+
+        var restoredCount = 0
+        var revokedCount = 0
+        manager.onPermissionRestored = { restoredCount += 1 }
+        manager.onPermissionRevoked = { revokedCount += 1 }
+
+        XCTAssertFalse(manager.checkPermission())
+        XCTAssertEqual(revokedCount, 1,
+            "granted→revoked observed by checkPermission() must fire onPermissionRevoked")
+        XCTAssertEqual(restoredCount, 0)
+
+        // No transition on the second check — must not re-fire.
+        XCTAssertFalse(manager.checkPermission())
+        XCTAssertEqual(revokedCount, 1, "steady revoked state must not re-fire the callback")
+    }
+
     // MARK: - Test 4: startPolling replaces existing timer
 
     func testStartPollingReplacesExistingTimer() {

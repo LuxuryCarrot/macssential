@@ -141,6 +141,80 @@ final class ScreenshotAutoCopyModuleTests: XCTestCase {
             "Raw equality would fail here — this is the exact pitfall from RESEARCH.md Q3.")
     }
 
+    // MARK: - Secure Input Warning (screenshot-intercept-drops root cause)
+    // While another process holds Secure Keyboard Input, macOS withholds keyDown
+    // from ALL event taps — interception fails even with a healthy tap. The module
+    // must surface this (warn once per hold episode) and clear automatically.
+
+    func testSecureInputWarningSetOnHold() {
+        let module = ScreenshotAutoCopyModule()
+        module.secureInputCheck = { true }
+        module.secureInputHolderName = { "Terminal" }
+
+        module.refreshSecureInputWarning()
+
+        XCTAssertNotNil(module.secureInputWarning, "Active Secure Input must surface a warning")
+        XCTAssertTrue(module.secureInputWarning?.contains("Terminal") == true,
+            "Warning must name the holder process")
+    }
+
+    func testSecureInputWarningWarnsOncePerEpisode() {
+        let module = ScreenshotAutoCopyModule()
+        var holderLookups = 0
+        module.secureInputCheck = { true }
+        module.secureInputHolderName = { holderLookups += 1; return "Terminal" }
+
+        module.refreshSecureInputWarning()
+        module.refreshSecureInputWarning()
+        module.refreshSecureInputWarning()
+
+        XCTAssertEqual(holderLookups, 1,
+            "Warning (and holder lookup) must fire once per hold episode, not every watchdog tick")
+    }
+
+    func testSecureInputWarningClearsOnRelease() {
+        let module = ScreenshotAutoCopyModule()
+        var secureInputActive = true
+        module.secureInputCheck = { secureInputActive }
+        module.secureInputHolderName = { "Terminal" }
+
+        module.refreshSecureInputWarning()
+        XCTAssertNotNil(module.secureInputWarning)
+
+        secureInputActive = false
+        module.refreshSecureInputWarning()
+        XCTAssertNil(module.secureInputWarning,
+            "Warning must clear automatically when Secure Input is released")
+    }
+
+    func testSecureInputWarningFallsBackWhenHolderUnknown() {
+        let module = ScreenshotAutoCopyModule()
+        module.secureInputCheck = { true }
+        module.secureInputHolderName = { nil }
+
+        module.refreshSecureInputWarning()
+
+        XCTAssertNotNil(module.secureInputWarning,
+            "Warning must still appear when the holder process cannot be resolved")
+    }
+
+    func testSecureInputReholdWarnsAgain() {
+        let module = ScreenshotAutoCopyModule()
+        var secureInputActive = true
+        var holderLookups = 0
+        module.secureInputCheck = { secureInputActive }
+        module.secureInputHolderName = { holderLookups += 1; return "Terminal" }
+
+        module.refreshSecureInputWarning() // episode 1
+        secureInputActive = false
+        module.refreshSecureInputWarning() // released
+        secureInputActive = true
+        module.refreshSecureInputWarning() // episode 2
+
+        XCTAssertEqual(holderLookups, 2, "A new hold episode must warn again")
+        XCTAssertNotNil(module.secureInputWarning)
+    }
+
     // MARK: - Settings View
 
     @MainActor func testSettingsViewExists() {

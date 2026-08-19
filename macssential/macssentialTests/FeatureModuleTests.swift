@@ -168,14 +168,15 @@ final class FeatureModuleTests: XCTestCase {
 
     func testDefaultRegistryOrder() {
         let registry = ModuleRegistry()
-        XCTAssertEqual(registry.modules.count, 8)
-        XCTAssertEqual(registry.modules[0].id, "dock-anchor")
-        XCTAssertEqual(registry.modules[1].id, "dock-autohide")
-        XCTAssertEqual(registry.modules[2].id, "dock-recent-apps")
-        XCTAssertEqual(registry.modules[3].id, "hidden-files")
-        XCTAssertEqual(registry.modules[4].id, "key-repeat")
-        XCTAssertEqual(registry.modules[5].id, "scroll-direction")
-        XCTAssertEqual(registry.modules[6].id, "screenshot-auto-copy")
-        XCTAssertEqual(registry.modules[7].id, "korean-filename-normalizer")
+#if DEBUG
+        // FinderSort is registered only in Debug builds (QUICK-KBR-02), after HiddenFiles.
+        var expectedIDs = ["dock-anchor", "dock-autohide", "dock-recent-apps", "hidden-files",
+                           "finder-sort"]
+#else
+        var expectedIDs = ["dock-anchor", "dock-autohide", "dock-recent-apps", "hidden-files"]
+#endif
+        expectedIDs += ["key-repeat", "scroll-direction", "screenshot-auto-copy",
+                        "korean-filename-normalizer"]
+        XCTAssertEqual(registry.modules.map(\.id), expectedIDs)
     }
 }

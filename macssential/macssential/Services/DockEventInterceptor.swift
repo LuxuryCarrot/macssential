@@ -44,7 +44,12 @@ final class DockEventInterceptor: @unchecked Sendable {
             userInfo: Unmanaged.passUnretained(self).toOpaque()
         )
 
-        guard let eventTap else { return } // nil = no Accessibility permission
+        guard let eventTap else {
+            // nil = no Accessibility permission or WindowServer refusal.
+            // Log instead of failing silently.
+            NSLog("[macssential] DockEventInterceptor: CGEvent.tapCreate returned nil — Dock anchoring unavailable")
+            return
+        }
 
         runLoopSource = CFMachPortCreateRunLoopSource(nil, eventTap, 0)
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
@@ -58,6 +63,11 @@ final class DockEventInterceptor: @unchecked Sendable {
             if let runLoopSource {
                 CFRunLoopRemoveSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
             }
+            // Without an explicit invalidate, WindowServer keeps the tap registered
+            // as a disabled zombie after the CFMachPort reference is released
+            // (verified via CGGetEventTapList: repeated start() cycles accumulate
+            // zombie registrations for the process lifetime).
+            CFMachPortInvalidate(eventTap)
         }
         eventTap = nil
         runLoopSource = nil

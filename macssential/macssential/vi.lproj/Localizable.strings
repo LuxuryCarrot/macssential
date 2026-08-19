@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "Sao chép ảnh chụp màn hình vào bảng nhớ tạm thay vì lưu tệp";
 "module.screenshot_auto_copy.also_save_to_folder" = "Đồng thời lưu vào thư mục";
 "module.screenshot_auto_copy.choose_folder" = "Chọn…";
+"module.screenshot_auto_copy.secure_input_warning" = "Đã tạm dừng chặn ảnh chụp màn hình: %@ đang giữ Secure Input. Sẽ tự động tiếp tục khi ứng dụng đó nhả Secure Input (ví dụ: đóng hộp nhập mật khẩu).";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "ứng dụng khác";
+"module.screenshot_auto_copy.tap_failed" = "Không thể bắt đầu chặn bàn phím. Hãy tắt/bật lại tính năng hoặc khởi động lại macssential.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Chuẩn hóa tên tệp";

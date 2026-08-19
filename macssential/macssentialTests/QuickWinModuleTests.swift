@@ -7,6 +7,12 @@ final class ModuleRegistryQuickWinTests: XCTestCase {
 
     func testTotalModuleCount() {
         let registry = ModuleRegistry()
-        XCTAssertEqual(registry.modules.count, 8, "Registry should contain 8 modules: DockAnchor, DockAutoHide, DockRecentApps, HiddenFiles, KeyRepeat, ScrollDirection, ScreenshotAutoCopy, KoreanFilenameNormalizer")
+#if DEBUG
+        // FinderSort is registered only in Debug builds (QUICK-KBR-02).
+        let expectedCount = 9
+#else
+        let expectedCount = 8
+#endif
+        XCTAssertEqual(registry.modules.count, expectedCount, "Registry should contain \(expectedCount) modules: DockAnchor, DockAutoHide, DockRecentApps, HiddenFiles, KeyRepeat, ScrollDirection, ScreenshotAutoCopy, KoreanFilenameNormalizer (+ FinderSort in Debug)")
     }
 }

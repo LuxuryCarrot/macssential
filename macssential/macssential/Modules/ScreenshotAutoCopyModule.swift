@@ -2,6 +2,8 @@ import CoreGraphics
 import AppKit
 import SwiftUI
 import ApplicationServices
+import Carbon
+import IOKit
 
 /// Intercepts Cmd+Shift+3/4 and adds the Control modifier, causing macOS to route
 /// the screenshot to the clipboard instead of saving to a file.
@@ -46,6 +48,25 @@ final class ScreenshotAutoCopyModule: FeatureModule, @unchecked Sendable {
     private var eventTap: CFMachPort?
     private var runLoopSource: CFRunLoopSource?
     private var clipboardObserverTimer: Timer?
+    private var tapWatchdogTimer: Timer?
+    private var wakeObserver: NSObjectProtocol?
+
+    /// User-facing warning shown while another process holds Secure Keyboard Input.
+    /// While SecureEventInput is held, macOS withholds keyDown events from ALL
+    /// CGEventTaps session-wide — interception silently fails even with a healthy
+    /// tap and granted Accessibility permission (root cause of screenshot-intercept-drops).
+    private(set) var secureInputWarning: String?
+
+    /// True when CGEvent.tapCreate returned nil — interception is not running
+    /// despite the toggle being on. Previously a silent failure.
+    private(set) var tapCreationFailed = false
+
+    /// Injectable for tests. Defaults to the real Carbon API.
+    var secureInputCheck: () -> Bool = { IsSecureEventInputEnabled() }
+
+    /// Injectable for tests. Resolves the localized name of the process holding
+    /// Secure Input, or nil when it cannot be determined.
+    var secureInputHolderName: () -> String? = { ScreenshotAutoCopyModule.resolveSecureInputHolderName() }
 
     init() {
         self.isEnabled = UserDefaults.standard.bool(forKey: "com.macssential.module.screenshot-auto-copy.enabled")
@@ -63,12 +84,17 @@ final class ScreenshotAutoCopyModule: FeatureModule, @unchecked Sendable {
     func activate() {
         guard AXIsProcessTrusted() else { return }
         startEventTap()
+        startTapWatchdog()
+        refreshSecureInputWarning()
     }
 
     func deactivate() {
         clipboardObserverTimer?.invalidate()
         clipboardObserverTimer = nil
+        stopTapWatchdog()
         stopEventTap()
+        secureInputWarning = nil
+        tapCreationFailed = false
     }
 
     /// Live-resource module: quit/permission-revoke must stop the CGEventTap.
@@ -96,7 +122,14 @@ final class ScreenshotAutoCopyModule: FeatureModule, @unchecked Sendable {
             userInfo: Unmanaged.passUnretained(self).toOpaque()
         )
 
-        guard let eventTap else { return }
+        guard let eventTap else {
+            // Previously a silent failure: the toggle stayed visually ON with no
+            // interception running and no way for the user (or us) to know why.
+            NSLog("[macssential] ScreenshotAutoCopyModule: CGEvent.tapCreate returned nil — keyboard interception unavailable")
+            tapCreationFailed = true
+            return
+        }
+        tapCreationFailed = false
 
         runLoopSource = CFMachPortCreateRunLoopSource(nil, eventTap, 0)
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
@@ -104,14 +137,132 @@ final class ScreenshotAutoCopyModule: FeatureModule, @unchecked Sendable {
     }
 
     private func stopEventTap() {
-        if let eventTap {
-            CGEvent.tapEnable(tap: eventTap, enable: false)
-        }
         if let runLoopSource {
             CFRunLoopRemoveSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
         }
+        if let eventTap {
+            CGEvent.tapEnable(tap: eventTap, enable: false)
+            // Without an explicit invalidate, WindowServer keeps the tap registered
+            // as a disabled zombie after the CFMachPort reference is released
+            // (verified empirically via CGGetEventTapList).
+            CFMachPortInvalidate(eventTap)
+        }
         eventTap = nil
         runLoopSource = nil
+    }
+
+    // MARK: - Tap Health Watchdog
+
+    /// macOS can silently disable a session CGEventTap over long uptime — sleep/wake
+    /// cycles, secure-input sessions (lock-screen password fields), or WindowServer
+    /// stress. The tapDisabledBy* recovery inside the callback only fires when that
+    /// notification is actually delivered to a live tap; when the tap dies without it,
+    /// interception stays broken until the tap is recreated (previously: only via a
+    /// manual module toggle). This watchdog re-checks tap health periodically and on
+    /// wake, re-enabling or recreating the tap as needed.
+    private func startTapWatchdog() {
+        stopTapWatchdog()
+        wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.ensureTapHealthy()
+        }
+        tapWatchdogTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
+            self?.ensureTapHealthy()
+        }
+    }
+
+    private func stopTapWatchdog() {
+        tapWatchdogTimer?.invalidate()
+        tapWatchdogTimer = nil
+        if let wakeObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(wakeObserver)
+            self.wakeObserver = nil
+        }
+    }
+
+    /// Re-enables a disabled tap, or fully recreates it when the mach port is
+    /// invalid or re-enabling is refused. Cheap when healthy (one state query).
+    /// Skips work when permission is missing — the app-level permission poll
+    /// handles revocation (releases taps) and restoration (reactivates modules).
+    private func ensureTapHealthy() {
+        guard isEnabled else { return }
+        // Secure Input blocks keyDown delivery to ALL taps regardless of tap
+        // health or permission — check it independently of the AX guard.
+        refreshSecureInputWarning()
+        guard AXIsProcessTrusted() else { return }
+        guard let eventTap else {
+            // Tap was never created (e.g., permission granted after activate) — create now.
+            startEventTap()
+            return
+        }
+        if !CFMachPortIsValid(eventTap) {
+            // Port invalidated by the system — re-enable is impossible, recreate.
+            startEventTap()
+            return
+        }
+        if !CGEvent.tapIsEnabled(tap: eventTap) {
+            CGEvent.tapEnable(tap: eventTap, enable: true)
+            if !CGEvent.tapIsEnabled(tap: eventTap) {
+                // Re-enable refused — tap is unrecoverable in place, recreate.
+                startEventTap()
+            }
+        }
+    }
+
+    // MARK: - Secure Input Detection
+
+    /// Updates `secureInputWarning` from the current Secure Keyboard Input state.
+    /// While another process holds SecureEventInput (e.g., Terminal with a
+    /// password prompt or a no-echo TUI, a stuck loginwindow session), macOS
+    /// withholds keyDown events from every CGEventTap in the session — the
+    /// interception fails even though the tap is healthy, permission is granted,
+    /// and recreating the tap changes nothing. Surfacing this is the only fix;
+    /// the hold clears when the offending app releases it.
+    ///
+    /// Warn-once semantics: the message (and log line) is produced only on the
+    /// inactive→active transition, not on every watchdog tick.
+    func refreshSecureInputWarning() {
+        let active = secureInputCheck()
+        if active {
+            guard secureInputWarning == nil else { return } // already warned this episode
+            let holder = secureInputHolderName()
+                ?? String(localized: "module.screenshot_auto_copy.secure_input_unknown_app")
+            secureInputWarning = String(
+                format: String(localized: "module.screenshot_auto_copy.secure_input_warning"),
+                holder
+            )
+            NSLog("[macssential] ScreenshotAutoCopyModule: Secure Input held by %@ — keyDown events are withheld from event taps; interception paused", holder)
+        } else if secureInputWarning != nil {
+            secureInputWarning = nil
+            NSLog("[macssential] ScreenshotAutoCopyModule: Secure Input released — interception resumed")
+        }
+    }
+
+    /// Resolves the app name of the process holding Secure Input by reading
+    /// kCGSSessionSecureInputPID from the IOKit root entry's IOConsoleUsers
+    /// property (same source `ioreg` shows). Returns nil when unresolvable.
+    static func resolveSecureInputHolderName() -> String? {
+        let root = IORegistryGetRootEntry(kIOMainPortDefault)
+        defer { IOObjectRelease(root) }
+        guard let sessions = IORegistryEntryCreateCFProperty(
+            root, "IOConsoleUsers" as CFString, kCFAllocatorDefault, 0
+        )?.takeRetainedValue() as? [[String: Any]] else { return nil }
+
+        for session in sessions {
+            guard let pid = session["kCGSSessionSecureInputPID"] as? Int else { continue }
+            if let app = NSRunningApplication(processIdentifier: pid_t(pid)),
+               let name = app.localizedName, !name.isEmpty {
+                return name
+            }
+            var buffer = [CChar](repeating: 0, count: 1024)
+            proc_name(pid_t(pid), &buffer, 1024)
+            let name = String(cString: buffer)
+            return name.isEmpty ? nil : name
+        }
+        return nil
     }
 
     // MARK: - Static Callback

@@ -1,4 +1,5 @@
 import CoreGraphics
+import AppKit
 import SwiftUI
 import ApplicationServices
 
@@ -32,6 +33,8 @@ final class ScrollDirectionModule: FeatureModule {
 
     private var eventTap: CFMachPort?
     private var runLoopSource: CFRunLoopSource?
+    private var tapWatchdogTimer: Timer?
+    private var wakeObserver: NSObjectProtocol?
 
     init() {
         self.isEnabled = UserDefaults.standard.bool(forKey: "com.macssential.module.scroll-direction.enabled")
@@ -39,9 +42,11 @@ final class ScrollDirectionModule: FeatureModule {
 
     func activate() {
         startEventTap()
+        startTapWatchdog()
     }
 
     func deactivate() {
+        stopTapWatchdog()
         stopEventTap()
     }
 
@@ -69,7 +74,12 @@ final class ScrollDirectionModule: FeatureModule {
             userInfo: Unmanaged.passUnretained(self).toOpaque()
         )
 
-        guard let eventTap else { return } // nil = no Accessibility permission (T-09-03)
+        guard let eventTap else {
+            // nil = no Accessibility permission (T-09-03) or WindowServer refusal.
+            // Log instead of failing silently — the toggle stays visually ON.
+            NSLog("[macssential] ScrollDirectionModule: CGEvent.tapCreate returned nil — scroll interception unavailable")
+            return
+        }
 
         runLoopSource = CFMachPortCreateRunLoopSource(nil, eventTap, 0)
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
@@ -77,14 +87,74 @@ final class ScrollDirectionModule: FeatureModule {
     }
 
     private func stopEventTap() {
-        if let eventTap {
-            CGEvent.tapEnable(tap: eventTap, enable: false)
-        }
         if let runLoopSource {
             CFRunLoopRemoveSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
         }
+        if let eventTap {
+            CGEvent.tapEnable(tap: eventTap, enable: false)
+            // Without an explicit invalidate, WindowServer keeps the tap registered
+            // as a disabled zombie after the CFMachPort reference is released.
+            CFMachPortInvalidate(eventTap)
+        }
         eventTap = nil
         runLoopSource = nil
+    }
+
+    // MARK: - Tap Health Watchdog
+
+    /// macOS can silently disable a session CGEventTap over long uptime — sleep/wake
+    /// cycles, secure-input sessions (lock-screen password fields), or WindowServer
+    /// stress. The tapDisabledBy* recovery inside the callback only fires when that
+    /// notification is actually delivered to a live tap; when the tap dies without it,
+    /// scroll reversal stays broken until the tap is recreated (previously: only via a
+    /// manual module toggle). This watchdog re-checks tap health periodically and on
+    /// wake, re-enabling or recreating the tap as needed.
+    private func startTapWatchdog() {
+        stopTapWatchdog()
+        wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.ensureTapHealthy()
+        }
+        tapWatchdogTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
+            self?.ensureTapHealthy()
+        }
+    }
+
+    private func stopTapWatchdog() {
+        tapWatchdogTimer?.invalidate()
+        tapWatchdogTimer = nil
+        if let wakeObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(wakeObserver)
+            self.wakeObserver = nil
+        }
+    }
+
+    /// Re-enables a disabled tap, or fully recreates it when the mach port is
+    /// invalid or re-enabling is refused. Cheap when healthy (one state query).
+    /// Skips work when permission is missing — the app-level permission poll
+    /// handles revocation (releases taps) and restoration (reactivates modules).
+    private func ensureTapHealthy() {
+        guard isEnabled, AXIsProcessTrusted() else { return }
+        guard let eventTap else {
+            // Tap was never created (e.g., permission granted after activate) — create now.
+            startEventTap()
+            return
+        }
+        if !CFMachPortIsValid(eventTap) {
+            // Port invalidated by the system — re-enable is impossible, recreate.
+            startEventTap()
+            return
+        }
+        if !CGEvent.tapIsEnabled(tap: eventTap) {
+            CGEvent.tapEnable(tap: eventTap, enable: true)
+            if !CGEvent.tapIsEnabled(tap: eventTap) {
+                // Re-enable refused — tap is unrecoverable in place, recreate.
+                startEventTap()
+            }
+        }
     }
 
     // MARK: - Static Callback

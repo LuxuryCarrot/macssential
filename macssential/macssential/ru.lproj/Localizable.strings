@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "Копировать снимки экрана в буфер обмена вместо сохранения";
 "module.screenshot_auto_copy.also_save_to_folder" = "Также сохранять в папку";
 "module.screenshot_auto_copy.choose_folder" = "Выбрать…";
+"module.screenshot_auto_copy.secure_input_warning" = "Перехват снимков экрана приостановлен: %@ удерживает безопасный ввод (Secure Input). Он возобновится автоматически, когда приложение его отпустит (например, закроется запрос пароля).";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "другое приложение";
+"module.screenshot_auto_copy.tap_failed" = "Не удалось запустить перехват клавиатуры. Выключите и включите функцию или перезапустите macssential.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Нормализация имён файлов";

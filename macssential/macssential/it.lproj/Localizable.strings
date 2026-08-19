@@ -19,6 +19,9 @@
 "module.screenshot_auto_copy.description" = "Copia le istantanee negli appunti invece di salvarle";
 "module.screenshot_auto_copy.also_save_to_folder" = "Salva anche in una cartella";
 "module.screenshot_auto_copy.choose_folder" = "Scegli…";
+"module.screenshot_auto_copy.secure_input_warning" = "Intercettazione istantanee in pausa: %@ sta usando l'input sicuro (Secure Input). Riprenderà automaticamente quando l'app lo rilascerà (ad es. alla chiusura di una richiesta di password).";
+"module.screenshot_auto_copy.secure_input_unknown_app" = "un'altra app";
+"module.screenshot_auto_copy.tap_failed" = "Impossibile avviare l'intercettazione della tastiera. Disattiva e riattiva la funzione oppure riavvia macssential.";
 
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Normalizzazione nomi file";

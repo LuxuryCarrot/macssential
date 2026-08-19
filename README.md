@@ -130,6 +130,13 @@ Accessibility permission. Grant it in **System Settings > Privacy & Security >
 Accessibility** — the app will guide you there when needed. The other modules
 work without any special permissions.
 
+> **Note:** While another app holds macOS **Secure Keyboard Input** (e.g.
+> Terminal showing a password prompt or a full-screen terminal UI), macOS
+> blocks keyboard interception for every app system-wide, so Screenshot
+> Auto-Copy temporarily falls back to the native screenshot behavior.
+> macssential detects this, shows a warning naming the app holding the lock,
+> and resumes automatically once it is released.
+
 ## Requirements
 
 - macOS 14 Sonoma or later
