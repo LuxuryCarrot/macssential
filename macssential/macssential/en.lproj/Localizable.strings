@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "another app";
 "module.screenshot_auto_copy.tap_failed" = "Could not start keyboard interception. Try toggling the feature off and on, or relaunch macssential.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Window Switcher";
+"module.window_switcher.description" = "Cmd+Tab cycles individual windows instead of apps";
+"module.window_switcher.hint" = "Hold Command and press Tab to cycle windows, Shift+Tab to go back, Esc to cancel. Release Command to switch.";
+"module.window_switcher.no_windows" = "No switchable windows";
+"module.window_switcher.tap_failed" = "Could not start keyboard interception. Try toggling the feature off and on, or relaunch macssential.";
+"module.window_switcher.secure_input_warning" = "Window switching is paused: %@ is holding Secure Input. It resumes automatically once that app releases it (e.g., a password prompt closes).";
+"module.window_switcher.secure_input_unknown_app" = "another app";
+"module.window_switcher.screen_recording_hint" = "Allow Screen Recording to see live previews of each window. Without it, app icons are shown instead.";
+"module.window_switcher.screen_recording_button" = "Allow Screen Recording";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Filename Normalizer";
 "module.kfn.description" = "Auto-rename decomposed (NFD) filenames to NFC";

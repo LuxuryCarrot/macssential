@@ -41,6 +41,10 @@ from the menu bar, with no digging through System Settings.
 - **Filename Normalizer** — Automatically rename decomposed (NFD) filenames
   to NFC, fixing garbled-looking names for Korean, Japanese, and other
   languages.
+- **Window Switcher** — Windows-style Cmd+Tab that switches between
+  individual windows instead of apps: a thumbnail grid you can drive with
+  Tab, arrow keys, or the mouse. Window previews light up when Screen
+  Recording permission is granted (app icons otherwise).
 
 
 ## Feature Demos
@@ -125,8 +129,9 @@ new versions in-app — no manual downloads needed.
 
 ## Permissions
 
-Dock Anchor, Scroll Direction, and Screenshot Auto-Copy require the
-Accessibility permission. Grant it in **System Settings > Privacy & Security >
+Dock Anchor, Scroll Direction, Screenshot Auto-Copy, and Window Switcher
+require the Accessibility permission. Window Switcher can additionally use
+the Screen Recording permission (optional) to show window previews. Grant it in **System Settings > Privacy & Security >
 Accessibility** — the app will guide you there when needed. The other modules
 work without any special permissions.
 

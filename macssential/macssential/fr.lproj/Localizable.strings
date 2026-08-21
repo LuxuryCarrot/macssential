@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "une autre app";
 "module.screenshot_auto_copy.tap_failed" = "Impossible de démarrer l'interception du clavier. Désactivez puis réactivez la fonction, ou relancez macssential.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Sélecteur de fenêtres";
+"module.window_switcher.description" = "Cmd+Tab bascule entre les fenêtres plutôt qu'entre les apps";
+"module.window_switcher.hint" = "Maintenez Commande et appuyez sur Tab pour parcourir les fenêtres, Maj+Tab pour revenir, Échap pour annuler. Relâchez Commande pour basculer.";
+"module.window_switcher.no_windows" = "Aucune fenêtre disponible";
+"module.window_switcher.tap_failed" = "Impossible de démarrer l'interception du clavier. Désactivez puis réactivez la fonction, ou relancez macssential.";
+"module.window_switcher.secure_input_warning" = "Le changement de fenêtre est en pause : %@ détient la saisie sécurisée (Secure Input). Il reprendra automatiquement dès que l'app la libérera (p. ex. fermeture d'une invite de mot de passe).";
+"module.window_switcher.secure_input_unknown_app" = "une autre app";
+"module.window_switcher.screen_recording_hint" = "Autorisez l’enregistrement de l’écran pour voir un aperçu réel de chaque fenêtre. Sinon, les icônes des apps sont affichées.";
+"module.window_switcher.screen_recording_button" = "Autoriser l’enregistrement de l’écran";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Normalisation des noms de fichiers";
 "module.kfn.description" = "Renommer automatiquement les noms décomposés (NFD) en NFC";

@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "eine andere App";
 "module.screenshot_auto_copy.tap_failed" = "Tastatur-Abfangen konnte nicht gestartet werden. Funktion aus- und einschalten oder macssential neu starten.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Fensterwechsler";
+"module.window_switcher.description" = "Cmd+Tab wechselt einzelne Fenster statt Apps";
+"module.window_switcher.hint" = "Befehlstaste halten und Tab drücken, um Fenster zu durchlaufen, Umschalt+Tab zurück, Esc zum Abbrechen. Befehlstaste loslassen, um zu wechseln.";
+"module.window_switcher.no_windows" = "Keine wechselbaren Fenster";
+"module.window_switcher.tap_failed" = "Tastatur-Abfangen konnte nicht gestartet werden. Funktion aus- und einschalten oder macssential neu starten.";
+"module.window_switcher.secure_input_warning" = "Fensterwechsel pausiert: %@ hält die sichere Eingabe (Secure Input). Er wird automatisch fortgesetzt, sobald die App sie freigibt (z. B. Passwortabfrage geschlossen).";
+"module.window_switcher.secure_input_unknown_app" = "eine andere App";
+"module.window_switcher.screen_recording_hint" = "Erlaube die Bildschirmaufnahme, um echte Vorschauen aller Fenster zu sehen. Ohne sie werden App-Symbole angezeigt.";
+"module.window_switcher.screen_recording_button" = "Bildschirmaufnahme erlauben";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Dateinamen-Normalisierung";
 "module.kfn.description" = "Zerlegte Dateinamen (NFD) automatisch in NFC umbenennen";

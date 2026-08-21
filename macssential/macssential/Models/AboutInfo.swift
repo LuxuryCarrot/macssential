@@ -69,7 +69,8 @@ enum AboutInfo {
             usedByModuleKeys: [
                 "module.dock_anchor.name",
                 "module.scroll_direction.name",
-                "module.screenshot_auto_copy.name"
+                "module.screenshot_auto_copy.name",
+                "module.window_switcher.name"
             ]
         ),
         PermissionInfo(

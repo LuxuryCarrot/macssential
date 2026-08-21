@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "otra aplicación";
 "module.screenshot_auto_copy.tap_failed" = "No se pudo iniciar la intercepción del teclado. Desactiva y activa la función o reinicia macssential.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Selector de ventanas";
+"module.window_switcher.description" = "Cmd+Tab alterna ventanas individuales en vez de apps";
+"module.window_switcher.hint" = "Mantén Comando y pulsa Tab para recorrer las ventanas, Mayús+Tab para volver y Esc para cancelar. Suelta Comando para cambiar.";
+"module.window_switcher.no_windows" = "No hay ventanas disponibles";
+"module.window_switcher.tap_failed" = "No se pudo iniciar la intercepción del teclado. Desactiva y activa la función o reinicia macssential.";
+"module.window_switcher.secure_input_warning" = "El cambio de ventanas está en pausa: %@ mantiene la entrada segura (Secure Input). Se reanudará automáticamente cuando esa app la libere (p. ej., al cerrarse una solicitud de contraseña).";
+"module.window_switcher.secure_input_unknown_app" = "otra aplicación";
+"module.window_switcher.screen_recording_hint" = "Permite la grabación de pantalla para ver una vista previa real de cada ventana. Sin ella, se muestran los iconos de las apps.";
+"module.window_switcher.screen_recording_button" = "Permitir grabación de pantalla";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Normalizador de nombres de archivo";
 "module.kfn.description" = "Renombrar automáticamente nombres descompuestos (NFD) a NFC";

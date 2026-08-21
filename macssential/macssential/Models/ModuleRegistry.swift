@@ -27,6 +27,7 @@ final class ModuleRegistry {
             KeyRepeatModule(), // QUICK-CZD-01: key repeat delay control
             ScrollDirectionModule(),
             ScreenshotAutoCopyModule(),   // SCRN-01: registers module so panel renders toggle
+            WindowSwitcherModule(),       // QUICK-F4Y-01: window-scoped Cmd+Tab switcher
             KoreanFilenameNormalizerModule(), // KFN-01: registers module so panel renders toggle
         ] as [any FeatureModule])
         self.init(modules: modules)

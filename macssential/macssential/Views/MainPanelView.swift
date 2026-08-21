@@ -6,6 +6,14 @@ struct MainPanelView: View {
     @Environment(LocalizationService.self) private var localizationService
     @Environment(PanelConfiguration.self) private var panelConfig
 
+    /// Reports this view's laid-out size so the enclosing NSHostingView can follow it.
+    ///
+    /// An NSMenuItem's custom view keeps whatever frame it was given, so a module
+    /// toggled ON — which reveals its settings row and grows the content — would
+    /// otherwise push the Settings/Quit rows out of view until the panel was closed
+    /// and reopened.
+    var onContentSizeChange: ((CGSize) -> Void)? = nil
+
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             ForEach(registry.modules.filter {
@@ -47,7 +55,12 @@ struct MainPanelView: View {
             .padding(.bottom, 8)
         }
         .padding(.vertical, 8)
-        .frame(width: 280)
+        .frame(width: MainPanelSizing.width)
+        .onGeometryChange(for: CGSize.self) { proxy in
+            proxy.size
+        } action: { size in
+            onContentSizeChange?(size)
+        }
         .onAppear {
             // Re-check permission every time the panel opens
             permissionManager.checkPermission()

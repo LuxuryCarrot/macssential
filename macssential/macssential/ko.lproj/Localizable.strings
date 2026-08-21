@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "다른 앱";
 "module.screenshot_auto_copy.tap_failed" = "키보드 가로채기를 시작할 수 없습니다. 기능을 껐다 켜거나 macssential을 재실행해 보세요.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "윈도우 전환기";
+"module.window_switcher.description" = "Cmd+Tab으로 앱이 아닌 개별 창 전환";
+"module.window_switcher.hint" = "Command를 누른 채 Tab으로 창을 이동하고, Shift+Tab으로 되돌아갑니다. Esc로 취소하고, Command를 놓으면 전환됩니다.";
+"module.window_switcher.no_windows" = "전환할 창이 없습니다";
+"module.window_switcher.tap_failed" = "키보드 가로채기를 시작할 수 없습니다. 기능을 껐다 켜거나 macssential을 재실행해 보세요.";
+"module.window_switcher.secure_input_warning" = "창 전환 일시 중지됨: %@이(가) 보안 입력(Secure Input)을 사용 중입니다. 해당 앱이 보안 입력을 해제하면(예: 암호 입력창 닫힘) 자동으로 재개됩니다.";
+"module.window_switcher.secure_input_unknown_app" = "다른 앱";
+"module.window_switcher.screen_recording_hint" = "화면 기록을 허용하면 각 창의 실제 미리보기가 표시됩니다. 허용하지 않으면 앱 아이콘으로 표시됩니다.";
+"module.window_switcher.screen_recording_button" = "화면 기록 허용";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "한글 파일명 정규화";
 "module.kfn.description" = "NFD 한글 파일명을 NFC로 자동 변환";

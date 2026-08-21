@@ -63,6 +63,15 @@
 		FSRT19010001A9B0C1D2E3F401 /* FinderSortModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FSRT19010001A9B0C1D2E3F402 /* FinderSortModule.swift */; };
 		FSRT19020001A9B0C1D2E3F401 /* FinderSortSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */; };
 		PSTG20010001A9B0C1D2E3F401 /* PanelSwitchToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */; };
+		WSW21010001A9B0C1D2E3F401 /* WindowSwitcherEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21010001A9B0C1D2E3F402 /* WindowSwitcherEngine.swift */; };
+		WSW21010002A9B0C1D2E3F401 /* WindowSwitcherEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21010002A9B0C1D2E3F402 /* WindowSwitcherEngineTests.swift */; };
+		WSW21020001A9B0C1D2E3F401 /* WindowSwitcherModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21020001A9B0C1D2E3F402 /* WindowSwitcherModule.swift */; };
+		WSW21020002A9B0C1D2E3F401 /* WindowSwitcherModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21020002A9B0C1D2E3F402 /* WindowSwitcherModuleTests.swift */; };
+		WSW21030001A9B0C1D2E3F401 /* WindowSwitcherOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21030001A9B0C1D2E3F402 /* WindowSwitcherOverlayView.swift */; };
+		WSW21030002A9B0C1D2E3F401 /* WindowSwitcherSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = WSW21030002A9B0C1D2E3F402 /* WindowSwitcherSettingsView.swift */; };
+		HGV22010001A9B0C1D2E3F401 /* WindowThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = HGV22010001A9B0C1D2E3F402 /* WindowThumbnailService.swift */; };
+		HGV22020001A9B0C1D2E3F401 /* MainPanelSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = HGV22020001A9B0C1D2E3F402 /* MainPanelSizing.swift */; };
+		HGV22020002A9B0C1D2E3F401 /* MainPanelSizingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = HGV22020002A9B0C1D2E3F402 /* MainPanelSizingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +168,15 @@
 		FSRT19010001A9B0C1D2E3F402 /* FinderSortModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSortModule.swift; sourceTree = "<group>"; };
 		FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSortSettingsView.swift; sourceTree = "<group>"; };
 		PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelSwitchToggleStyle.swift; sourceTree = "<group>"; };
+		WSW21010001A9B0C1D2E3F402 /* WindowSwitcherEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherEngine.swift; sourceTree = "<group>"; };
+		WSW21010002A9B0C1D2E3F402 /* WindowSwitcherEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherEngineTests.swift; sourceTree = "<group>"; };
+		WSW21020001A9B0C1D2E3F402 /* WindowSwitcherModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherModule.swift; sourceTree = "<group>"; };
+		WSW21020002A9B0C1D2E3F402 /* WindowSwitcherModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherModuleTests.swift; sourceTree = "<group>"; };
+		WSW21030001A9B0C1D2E3F402 /* WindowSwitcherOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherOverlayView.swift; sourceTree = "<group>"; };
+		WSW21030002A9B0C1D2E3F402 /* WindowSwitcherSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherSettingsView.swift; sourceTree = "<group>"; };
+		HGV22010001A9B0C1D2E3F402 /* WindowThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowThumbnailService.swift; sourceTree = "<group>"; };
+		HGV22020001A9B0C1D2E3F402 /* MainPanelSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanelSizing.swift; sourceTree = "<group>"; };
+		HGV22020002A9B0C1D2E3F402 /* MainPanelSizingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanelSizingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXVariantGroup section */
@@ -220,11 +238,14 @@
 				E5F60718A9B0C1D2E3F4A5B7 /* SettingsView.swift */,
 				1B1C3E0C156973F976EF547D /* FeatureRowView.swift */,
 				31237D72EE63A45BEA1CD782 /* MainPanelView.swift */,
+				HGV22020001A9B0C1D2E3F402 /* MainPanelSizing.swift */,
 				SCRN15020001A9B0C1D2E3F402 /* ScreenshotAutoCopySettingsView.swift */,
 				KFN16030001A9B0C1D2E3F402 /* KoreanFilenameNormalizerSettingsView.swift */,
 				KREP17030001A9B0C1D2E3F402 /* KeyRepeatSettingsView.swift */,
 				FSRT19020001A9B0C1D2E3F402 /* FinderSortSettingsView.swift */,
 				PSTG20010001A9B0C1D2E3F402 /* PanelSwitchToggleStyle.swift */,
+				WSW21030001A9B0C1D2E3F402 /* WindowSwitcherOverlayView.swift */,
+				WSW21030002A9B0C1D2E3F402 /* WindowSwitcherSettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +258,8 @@
 				0F1E2D3C4B5A69788796A5B4 /* AppRelocationService.swift */,
 				LANG14020002A9B0C1D2E3F402 /* LocalizationService.swift */,
 				F60718A9B0C1D2E3F4A5B6C7 /* UpdaterService.swift */,
+				WSW21010001A9B0C1D2E3F402 /* WindowSwitcherEngine.swift */,
+				HGV22010001A9B0C1D2E3F402 /* WindowThumbnailService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -295,6 +318,9 @@
 				KFN16010001A9B0C1D2E3F402 /* KoreanFilenameNormalizerModuleTests.swift */,
 				PANLCFG0002A9B0C1D2E3F402 /* PanelConfigurationTests.swift */,
 				KREP17020001A9B0C1D2E3F402 /* KeyRepeatModuleTests.swift */,
+				WSW21010002A9B0C1D2E3F402 /* WindowSwitcherEngineTests.swift */,
+				HGV22020002A9B0C1D2E3F402 /* MainPanelSizingTests.swift */,
+				WSW21020002A9B0C1D2E3F402 /* WindowSwitcherModuleTests.swift */,
 			);
 			path = macssentialTests;
 			sourceTree = "<group>";
@@ -311,6 +337,7 @@
 				E8F10801A9B0C1D2E3F4A5F1 /* ScrollDirectionModule.swift */,
 				SCRN15010001A9B0C1D2E3F402 /* ScreenshotAutoCopyModule.swift */,
 				KFN16020001A9B0C1D2E3F402 /* KoreanFilenameNormalizerModule.swift */,
+				WSW21020001A9B0C1D2E3F402 /* WindowSwitcherModule.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -436,6 +463,9 @@
 				KFN16010001A9B0C1D2E3F401 /* KoreanFilenameNormalizerModuleTests.swift in Sources */,
 				PANLCFG0002A9B0C1D2E3F401 /* PanelConfigurationTests.swift in Sources */,
 				KREP17020001A9B0C1D2E3F401 /* KeyRepeatModuleTests.swift in Sources */,
+				WSW21010002A9B0C1D2E3F401 /* WindowSwitcherEngineTests.swift in Sources */,
+				HGV22020002A9B0C1D2E3F401 /* MainPanelSizingTests.swift in Sources */,
+				WSW21020002A9B0C1D2E3F401 /* WindowSwitcherModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +476,7 @@
 				99AC651C918EFB88F9B38832 /* AppDelegate.swift in Sources */,
 				6BC9A6CC078034A9C96C1FFC /* FeatureRowView.swift in Sources */,
 				690A29ACCDC0B72DC4F6724F /* MainPanelView.swift in Sources */,
+				HGV22020001A9B0C1D2E3F401 /* MainPanelSizing.swift in Sources */,
 				1399A8E508F3E104E701506D /* macssentialApp.swift in Sources */,
 				A90CC6AD42733F54797EF0B6 /* FeatureModule.swift in Sources */,
 				4AB7169604F2CD1209832DB8 /* ModuleRegistry.swift in Sources */,
@@ -476,6 +507,11 @@
 				FSRT19020001A9B0C1D2E3F401 /* FinderSortSettingsView.swift in Sources */,
 				PSTG20010001A9B0C1D2E3F401 /* PanelSwitchToggleStyle.swift in Sources */,
 				PANLCFG0001A9B0C1D2E3F401 /* PanelConfiguration.swift in Sources */,
+				WSW21010001A9B0C1D2E3F401 /* WindowSwitcherEngine.swift in Sources */,
+				WSW21020001A9B0C1D2E3F401 /* WindowSwitcherModule.swift in Sources */,
+				WSW21030001A9B0C1D2E3F401 /* WindowSwitcherOverlayView.swift in Sources */,
+				WSW21030002A9B0C1D2E3F401 /* WindowSwitcherSettingsView.swift in Sources */,
+				HGV22010001A9B0C1D2E3F401 /* WindowThumbnailService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

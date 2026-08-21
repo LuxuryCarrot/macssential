@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "別のアプリ";
 "module.screenshot_auto_copy.tap_failed" = "キーボードの取得を開始できませんでした。機能をオフ/オンするか、macssential を再起動してください。";
 
+/* Window Switcher */
+"module.window_switcher.name" = "ウインドウスイッチャー";
+"module.window_switcher.description" = "Cmd+Tab でアプリではなく個々のウインドウを切り替え";
+"module.window_switcher.hint" = "Command を押したまま Tab でウインドウを移動、Shift+Tab で戻ります。Esc でキャンセル、Command を離すと切り替わります。";
+"module.window_switcher.no_windows" = "切り替えできるウインドウがありません";
+"module.window_switcher.tap_failed" = "キーボードの取得を開始できませんでした。機能をオフ/オンするか、macssential を再起動してください。";
+"module.window_switcher.secure_input_warning" = "ウインドウ切り替えを一時停止中: %@ がセキュア入力を使用しています。そのアプリがセキュア入力を解除すると（例: パスワード入力の終了）自動的に再開されます。";
+"module.window_switcher.secure_input_unknown_app" = "別のアプリ";
+"module.window_switcher.screen_recording_hint" = "画面収録を許可すると、各ウインドウのプレビューが表示されます。許可しない場合はAppのアイコンが表示されます。";
+"module.window_switcher.screen_recording_button" = "画面収録を許可";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "ファイル名正規化";
 "module.kfn.description" = "濁点・半濁点が分解されたファイル名（NFD）をNFCに自動変換";

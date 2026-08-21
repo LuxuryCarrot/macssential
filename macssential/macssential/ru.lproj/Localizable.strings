@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "другое приложение";
 "module.screenshot_auto_copy.tap_failed" = "Не удалось запустить перехват клавиатуры. Выключите и включите функцию или перезапустите macssential.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Переключатель окон";
+"module.window_switcher.description" = "Cmd+Tab переключает отдельные окна, а не приложения";
+"module.window_switcher.hint" = "Удерживая Command, нажимайте Tab для перехода между окнами, Shift+Tab — назад, Esc — отмена. Отпустите Command, чтобы переключиться.";
+"module.window_switcher.no_windows" = "Нет доступных окон";
+"module.window_switcher.tap_failed" = "Не удалось запустить перехват клавиатуры. Выключите и включите функцию или перезапустите macssential.";
+"module.window_switcher.secure_input_warning" = "Переключение окон приостановлено: %@ удерживает безопасный ввод (Secure Input). Оно возобновится автоматически, когда приложение его отпустит (например, закроется запрос пароля).";
+"module.window_switcher.secure_input_unknown_app" = "другое приложение";
+"module.window_switcher.screen_recording_hint" = "Разрешите запись экрана, чтобы видеть реальные миниатюры каждого окна. Без неё показываются значки приложений.";
+"module.window_switcher.screen_recording_button" = "Разрешить запись экрана";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Нормализация имён файлов";
 "module.kfn.description" = "Автоматически переименовывать разложенные (NFD) имена в NFC";

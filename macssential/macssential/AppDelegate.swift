@@ -124,22 +124,62 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainMenu.addItem(languageMenuItem)
 
         panelMenuItem = NSMenuItem()
-        hostingView = NSHostingView(rootView: makeMainPanelView())
-        let fittingSize = hostingView.fittingSize
-        hostingView.frame = NSRect(x: 0, y: 0, width: fittingSize.width, height: fittingSize.height)
-        panelMenuItem.view = hostingView
+        let hosting = makeMainPanelHostingView()
+        hostingView = hosting
+        let fittingSize = hosting.fittingSize
+        hosting.frame = NSRect(x: 0, y: 0, width: fittingSize.width, height: fittingSize.height)
+        panelMenuItem.view = hosting
         mainMenu.addItem(panelMenuItem)
+    }
+
+    /// Builds the panel's hosting view with intrinsic-size sizing enabled, so that
+    /// `invalidateIntrinsicContentSize()` from `resizePanel(to:)` makes AppKit
+    /// re-lay out this custom menu item view instead of ignoring the new frame.
+    private func makeMainPanelHostingView() -> NSHostingView<some View> {
+        let hosting = NSHostingView(rootView: makeMainPanelView())
+        hosting.sizingOptions = [.intrinsicContentSize]
+        return hosting
     }
 
     /// Builds the main panel SwiftUI view with environment injected.
     /// Extracted so the panel can be rebuilt fresh on each open, forcing SwiftUI
     /// to re-evaluate its body against the just-checked permission state.
     private func makeMainPanelView() -> some View {
-        MainPanelView()
-            .environment(registry)
-            .environment(permissionManager)
-            .environment(localizationService)
-            .environment(panelConfiguration)
+        MainPanelView(onContentSizeChange: { [weak self] size in
+            self?.resizePanel(to: size)
+        })
+        .environment(registry)
+        .environment(permissionManager)
+        .environment(localizationService)
+        .environment(panelConfiguration)
+    }
+
+    /// Follows the panel content's height while the menu is open.
+    ///
+    /// Toggling a module ON reveals its settings row and grows the SwiftUI content,
+    /// but an NSMenuItem's custom view keeps the frame it was assigned — so without
+    /// this the newly revealed rows would overflow and hide Settings/Quit until the
+    /// panel was closed and reopened.
+    ///
+    /// Re-entrancy: resizing re-runs SwiftUI layout, which fires the geometry
+    /// callback that called us. `needsResize` is the loop breaker — once the applied
+    /// size matches the reported one to within half a point, this returns early and
+    /// the cycle stops (T-HGV-06).
+    private func resizePanel(to contentSize: CGSize) {
+        guard let hostingView else { return }
+
+        // Leave room for the menu bar and the language row above the panel item.
+        let available = (NSScreen.main?.visibleFrame.height ?? 800) - 60
+        let target = MainPanelSizing.fittedSize(
+            contentHeight: contentSize.height, availableHeight: available)
+        guard MainPanelSizing.needsResize(current: hostingView.frame.size, target: target) else { return }
+
+        // The menu window is owned and laid out by NSMenu: once the item view's
+        // frame and intrinsic size change, the open menu re-fits its window on its
+        // own. Touching the window frame here as well double-counts the growth and
+        // leaves a blank band above the content.
+        hostingView.frame.size = target
+        hostingView.invalidateIntrinsicContentSize()
     }
 
     private func languageMenuTitle() -> String {
@@ -173,7 +213,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // initial render (e.g. "permission required" even after it was granted).
         // A brand-new NSHostingView reads current observable values at layout time,
         // and its fittingSize also reflects expanded/collapsed module settingsViews.
-        let refreshed = NSHostingView(rootView: makeMainPanelView())
+        let refreshed = makeMainPanelHostingView()
         refreshed.frame.size = refreshed.fittingSize
         hostingView = refreshed
         panelMenuItem.view = refreshed

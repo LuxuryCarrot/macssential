@@ -176,7 +176,7 @@ final class FeatureModuleTests: XCTestCase {
         var expectedIDs = ["dock-anchor", "dock-autohide", "dock-recent-apps", "hidden-files"]
 #endif
         expectedIDs += ["key-repeat", "scroll-direction", "screenshot-auto-copy",
-                        "korean-filename-normalizer"]
+                        "window-switcher", "korean-filename-normalizer"]
         XCTAssertEqual(registry.modules.map(\.id), expectedIDs)
     }
 }

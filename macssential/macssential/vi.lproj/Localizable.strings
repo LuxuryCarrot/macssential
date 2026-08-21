@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "ứng dụng khác";
 "module.screenshot_auto_copy.tap_failed" = "Không thể bắt đầu chặn bàn phím. Hãy tắt/bật lại tính năng hoặc khởi động lại macssential.";
 
+/* Window Switcher */
+"module.window_switcher.name" = "Bộ chuyển cửa sổ";
+"module.window_switcher.description" = "Cmd+Tab chuyển từng cửa sổ thay vì từng ứng dụng";
+"module.window_switcher.hint" = "Giữ Command và nhấn Tab để duyệt các cửa sổ, Shift+Tab để quay lại, Esc để hủy. Thả Command để chuyển.";
+"module.window_switcher.no_windows" = "Không có cửa sổ nào để chuyển";
+"module.window_switcher.tap_failed" = "Không thể bắt đầu chặn bàn phím. Hãy tắt/bật lại tính năng hoặc khởi động lại macssential.";
+"module.window_switcher.secure_input_warning" = "Đã tạm dừng chuyển cửa sổ: %@ đang giữ Secure Input. Sẽ tự động tiếp tục khi ứng dụng đó nhả Secure Input (ví dụ: đóng hộp nhập mật khẩu).";
+"module.window_switcher.secure_input_unknown_app" = "ứng dụng khác";
+"module.window_switcher.screen_recording_hint" = "Cho phép Ghi màn hình để xem ảnh xem trước thật của từng cửa sổ. Nếu không, biểu tượng ứng dụng sẽ được hiển thị.";
+"module.window_switcher.screen_recording_button" = "Cho phép ghi màn hình";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "Chuẩn hóa tên tệp";
 "module.kfn.description" = "Tự động đổi tên tệp dạng phân rã (NFD) sang NFC";

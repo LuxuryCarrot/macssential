@@ -23,6 +23,17 @@
 "module.screenshot_auto_copy.secure_input_unknown_app" = "其他应用";
 "module.screenshot_auto_copy.tap_failed" = "无法启动键盘拦截。请尝试关闭再开启该功能，或重新启动 macssential。";
 
+/* Window Switcher */
+"module.window_switcher.name" = "窗口切换器";
+"module.window_switcher.description" = "Cmd+Tab 切换单个窗口而非应用";
+"module.window_switcher.hint" = "按住 Command 并按 Tab 切换窗口，Shift+Tab 反向切换，Esc 取消。松开 Command 即完成切换。";
+"module.window_switcher.no_windows" = "没有可切换的窗口";
+"module.window_switcher.tap_failed" = "无法启动键盘拦截。请尝试关闭再开启该功能，或重新启动 macssential。";
+"module.window_switcher.secure_input_warning" = "窗口切换已暂停：%@ 正在占用安全输入 (Secure Input)。该应用释放后（例如密码输入框关闭）将自动恢复。";
+"module.window_switcher.secure_input_unknown_app" = "其他应用";
+"module.window_switcher.screen_recording_hint" = "允许“屏幕录制”后可查看每个窗口的实时预览。若不允许，则显示应用图标。";
+"module.window_switcher.screen_recording_button" = "允许屏幕录制";
+
 /* Korean Filename Normalizer */
 "module.kfn.name" = "文件名规范化";
 "module.kfn.description" = "自动将分解形式（NFD）的文件名重命名为 NFC";
