@@ -22,6 +22,18 @@
     </item>
     -->
     <item>
+      <title>Version 0.1.12</title>
+      <pubDate>Fri, 21 Aug 2026 04:35:08 +0000</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://github.com/LuxuryCarrot/macssential/releases/download/v0.1.12/macssential-0.1.12.dmg"
+        sparkle:edSignature="sqSgF/HJoj/YHPxjSOxmhnghcVY3QXfDm4F2wJyR2MOIiJHQGOqC6GfE6PQGoh2+hgAstpA/qmjlEeMusJCKAw=="
+        length="1583887"
+        type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 0.1.11</title>
       <pubDate>Wed, 19 Aug 2026 02:28:26 +0000</pubDate>
       <sparkle:version>12</sparkle:version>
