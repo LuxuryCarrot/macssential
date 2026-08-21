@@ -77,6 +77,9 @@ from the menu bar, with no digging through System Settings.
 <details><summary><b>Filename Normalizer</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="Filename Normalizer demo"></p>
 </details>
+<details><summary><b>Window Switcher</b></summary>
+<p align="center"><img src="docs/assets/demo-window-switcher.gif" width="600" alt="Window Switcher demo"></p>
+</details>
 
 ## Using the App
 

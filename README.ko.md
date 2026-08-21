@@ -74,6 +74,9 @@ macssential은 macOS 14+용 메뉴바 유틸리티로, macOS의 불편한 기본
 <details><summary><b>한글 파일명 정규화</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="한글 파일명 정규화 demo"></p>
 </details>
+<details><summary><b>윈도우 전환기</b></summary>
+<p align="center"><img src="docs/assets/demo-window-switcher.gif" width="600" alt="윈도우 전환기 demo"></p>
+</details>
 
 ## 사용 방법
 

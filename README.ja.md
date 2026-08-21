@@ -76,6 +76,9 @@ macssentialはmacOS 14+向けのメニューバーユーティリティです。
 <details><summary><b>ファイル名正規化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="ファイル名正規化 demo"></p>
 </details>
+<details><summary><b>ウィンドウスイッチャー</b></summary>
+<p align="center"><img src="docs/assets/demo-window-switcher.gif" width="600" alt="ウィンドウスイッチャー demo"></p>
+</details>
 
 ## 使い方
 

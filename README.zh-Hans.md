@@ -71,6 +71,9 @@ macOS 那些不方便的默认行为——程序坞在多显示器间的移动�
 <details><summary><b>文件名规范化</b></summary>
 <p align="center"><img src="docs/assets/demo-filename-normalizer.gif" width="600" alt="文件名规范化 demo"></p>
 </details>
+<details><summary><b>窗口切换器</b></summary>
+<p align="center"><img src="docs/assets/demo-window-switcher.gif" width="600" alt="窗口切换器 demo"></p>
+</details>
 
 ## 使用方法
 
